@@ -23,8 +23,8 @@ int main(int argc, char *argv[])
 	// Hardcode input
 	//	filepath = "sat_ex_2.pla";
 	//filepath = "Sat_ex11_3.pla";
-	filepath = "Sat_ex30_3.pla";
-	QFile file(QString::fromUtf8(filepath.c_str()));
+    filepath = "/Users/artoshechka/coding/development_of_information_security_tools_lab_2/SatExamples/sat_ex_1.pla";
+    QFile file(QString::fromUtf8(filepath.c_str()));
 
 	//считываем весь файл
 	if ((file.exists()) && (file.open(QIODevice::ReadOnly))) {
