@@ -9,5 +9,6 @@ target_include_directories(laba_SAT1 PRIVATE
 )
 
 target_link_libraries(laba_SAT1 PRIVATE
+    lab2_allocator
     bool_equation
 )
