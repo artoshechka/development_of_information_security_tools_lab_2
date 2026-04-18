@@ -1,4 +1,5 @@
 #include "boolequation.h"
+#include "min_dont_care_branching_strategy.h"
 #include <vector>
 #include <algorithm>
 #include <ostream>
@@ -221,42 +222,11 @@ void BoolEquation::Simplify(int ixCol, char value)
 
 int BoolEquation::ChooseColForBranching()
 {
-	vector<int> indexes;
-	vector<int> values;
-	bool rezInit = false;
+	MinDontCareBranchingStrategy defaultStrategy;
+	return ChooseColForBranching(defaultStrategy);
+}
 
-	for (int i = 0; i < mask.getSize(); i++) {
-		if (mask[i] == 0) {
-			indexes.push_back(i);
-		}
-	}
-
-	for (int i = 0; i < cnfSize; i++) {
-		BoolInterval *interval = cnf[i];
-
-		if (interval != nullptr) {
-			if (!rezInit) {
-				for (int k = 0; k < indexes.size(); k++) {
-					if (interval->getValue(indexes.at(k)) == '-') {
-						values.push_back(1);
-					} else {
-						values.push_back(0);
-					}
-				}
-
-				rezInit = true;
-			} else {
-				for (int k = 0; k < indexes.size(); k++) {
-					if (interval->getValue(indexes.at(k)) == '-') {
-						//int val = values.at(k) + (interval->getValue(indexes.at(k)) - '0');
-						values.at(k)++;
-					}
-				}
-			}
-		}
-	}
-
-	int minElementIndex = std::min_element(values.begin(), values.end()) - values.begin();
-
-	return indexes.at(minElementIndex);
+int BoolEquation::ChooseColForBranching(const BranchingStrategy &strategy)
+{
+	return strategy.ChooseColumn(*this);
 }

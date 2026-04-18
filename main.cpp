@@ -5,7 +5,10 @@
 #include <vector>
 #include <stack>
 #include <ostream>
+#include <memory>
+#include <stdexcept>
 #include "NodeBoolTree.h"
+#include "branching_strategy_factory.h"
 #include "boolinterval.h"
 #include "boolequation.h"
 #include "BBV.h"
@@ -26,6 +29,16 @@ static std::string trim(const std::string &value)
 
 int main(int argc, char *argv[])
 {
+	std::string strategyName = "min-dont-care";
+
+	std::unique_ptr<BranchingStrategy> branchingStrategy;
+	try {
+		branchingStrategy = BranchingStrategyFactory::CreateByName(strategyName);
+	} catch (const std::invalid_argument &error) {
+		std::cout << error.what() << "\n";
+		return 1;
+	}
+
 	std::vector<std::string> full_file_list;
 	std::string filepath;
 	//std::cout << "Input file path...\n";
@@ -33,8 +46,15 @@ int main(int argc, char *argv[])
 	// Hardcode input
 	//	filepath = "sat_ex_2.pla";
 	//filepath = "Sat_ex11_3.pla";
-    filepath = "/Users/artoshechka/coding/development_of_information_security_tools_lab_2/SatExamples/sat_ex_1.pla";
-    std::ifstream file(filepath.c_str());
+	filepath = "/Users/artoshechka/coding/development_of_information_security_tools_lab_2/SatExamples/sat_ex_1.pla";
+	if (argc > 2) {
+		filepath = argv[2];
+	}
+
+	std::cout << "Branching strategy: " << branchingStrategy->GetName() << "\n";
+	std::cout << "Input file: " << filepath << "\n";
+
+	std::ifstream file(filepath.c_str());
 
 	//считываем весь файл
 	if (file.is_open()) {
@@ -144,7 +164,14 @@ int main(int argc, char *argv[])
 						case 2: { // Правила не выполнились, ветвление.
 							// Ветвление, создание новых узлов.
 
-							int indexBranching = currentEquation->ChooseColForBranching();
+							int indexBranching =
+								currentEquation->ChooseColForBranching(*branchingStrategy);
+
+							if (indexBranching < 0) {
+								BoolTree.pop();
+								flag = false;
+								break;
+							}
 
 							BoolEquation *Equation0 = new BoolEquation(*currentEquation);
 							BoolEquation *Equation1 = new BoolEquation(*currentEquation);
