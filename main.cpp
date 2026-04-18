@@ -1,9 +1,8 @@
 #include <iostream>
-#include <QFile>
-#include <QTextStream>
-#include <QStack>
 #include <string>
 #include <cstring>
+#include <fstream>
+#include <vector>
 #include <stack>
 #include <ostream>
 #include "NodeBoolTree.h"
@@ -11,42 +10,59 @@
 #include "boolequation.h"
 #include "BBV.h"
 
+static std::string trim(const std::string &value)
+{
+	const std::string whitespace = " \t\n\r";
+	const std::size_t begin = value.find_first_not_of(whitespace);
+
+	if (begin == std::string::npos) {
+		return "";
+	}
+
+	const std::size_t end = value.find_last_not_of(whitespace);
+	return value.substr(begin, end - begin + 1);
+}
+
 
 int main(int argc, char *argv[])
 {
-	QStringList full_file_list;
-	QList<QStringList> Elements;
+	std::vector<std::string> full_file_list;
 	std::string filepath;
-	QStringList inputs;
 	//std::cout << "Input file path...\n";
 	//std::cin >> filepath;
 	// Hardcode input
 	//	filepath = "sat_ex_2.pla";
 	//filepath = "Sat_ex11_3.pla";
     filepath = "/Users/artoshechka/coding/development_of_information_security_tools_lab_2/SatExamples/sat_ex_1.pla";
-    QFile file(QString::fromUtf8(filepath.c_str()));
+    std::ifstream file(filepath.c_str());
 
 	//считываем весь файл
-	if ((file.exists()) && (file.open(QIODevice::ReadOnly))) {
-		while (!file.atEnd()) {
-			full_file_list << file.readLine().replace("\r\n", "");
+	if (file.is_open()) {
+		std::string line;
+		while (std::getline(file, line)) {
+			if (!line.empty() && line[line.size() - 1] == '\r') {
+				line.erase(line.size() - 1);
+			}
+			full_file_list.push_back(line);
 		}
 
-		int cnfSize = full_file_list.length();
+		file.close();
+
+		int cnfSize = static_cast<int>(full_file_list.size());
 		BoolInterval **CNF = new BoolInterval*[cnfSize];
 		int rangInterval = -1; // error
 
 		if (cnfSize) {
-			rangInterval = full_file_list[0].toUtf8().trimmed().length();
+			rangInterval = static_cast<int>(trim(full_file_list[0]).length());
 		}
 
 		for (int i = 0; i < cnfSize; i++) { // Заполняем массив
-			QString strv = full_file_list[i];
-			CNF[i] = new BoolInterval(strv.toUtf8().trimmed().data());
+			std::string strv = trim(full_file_list[i]);
+			CNF[i] = new BoolInterval(strv.c_str());
 		}
 
-		QString rootvec = "";
-		QString rootdnc = "";
+		std::string rootvec;
+		std::string rootdnc;
 
 		//Строим интервал в которм все компоненты принимают значение '-',
 		//который представляет собой корень уравнения, пока пустой.
@@ -57,11 +73,8 @@ int main(int argc, char *argv[])
 			rootdnc += "1";
 		}
 
-		QByteArray v = rootvec.toUtf8();
-
-		BBV vec(v.data());
-		QByteArray d = rootdnc.toUtf8();
-		BBV dnc(d.data());
+		BBV vec(rootvec.c_str());
+		BBV dnc(rootdnc.c_str());
 
 		// Создаем пустой корень уравнения;
 		BoolInterval *root = new BoolInterval(vec, dnc);
@@ -81,7 +94,7 @@ int main(int argc, char *argv[])
 		// 2. Проверка правила 1. Выполнилось? Да - Упрощаем, Нет - Идем дальше.
 
 		// Создаем стек под узлы булева дерева
-		// QStack<NodeBoolTree> BoolTree;
+		// Стек под узлы булева дерева.
 
 		bool rootIsFinded = false;
 		stack<NodeBoolTree *> BoolTree;

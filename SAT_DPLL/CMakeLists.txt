@@ -1,24 +1,13 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(laba_SAT1 LANGUAGES CXX)
-
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS OFF)
-
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
-
 add_executable(laba_SAT1
-    BBV.cpp
-    boolequation.cpp
-    boolinterval.cpp
-    main.cpp
-    BBV.h
-    NodeBoolTree.h
-    boolequation.h
-    boolinterval.h
+    ../main.cpp
 )
 
-target_compile_definitions(laba_SAT1 PRIVATE QT_DEPRECATED_WARNINGS)
-target_link_libraries(laba_SAT1 PRIVATE Qt${QT_VERSION_MAJOR}::Core)
+target_include_directories(laba_SAT1 PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+target_link_libraries(laba_SAT1 PRIVATE
+    bool_equation
+)
