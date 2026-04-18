@@ -3,6 +3,8 @@
 
 #include "boolinterval.h"
 
+class BranchingStrategy; // Forward declaration of BranchingStrategy
+
 class BoolEquation
 {
 public:
@@ -21,6 +23,7 @@ public:
 	bool Rule5Col1(BBV vector);
 	void Simplify(int ixCol, char value);
 	int ChooseColForBranching();
+	int ChooseColForBranching(const BranchingStrategy &strategy);
 };
 
 #endif // BOOLEQUATION_H
