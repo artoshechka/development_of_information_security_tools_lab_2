@@ -13,8 +13,7 @@
 В проекте используется:
 - **CMake** v3.12
 - **Стандарт C++** 17
-- **(Allocator)[https://github.com/endurodave/Allocator.git]**
-
+- **Allocator**: https://github.com/endurodave/Allocator.git
 ## UML-диаграмма классов
 ```mermaid
 classDiagram
@@ -125,12 +124,9 @@ cmake .. && cmake --build .
 ```
 Запустите программу:
 ```powershell
-.\development_of_information_security_tools_lab_2.exe
+.\development_of_information_security_tools_lab_2.exe <PATH> min-dont-care
 ```
 
-После запуска программа запросит пароль в консоли.
-
-Ограничение на пароль: не более 100 символов.
 
 </details>
 
@@ -150,5 +146,9 @@ cmake --build .
 
 Запустите программу:
 ```bash
-./development_of_information_security_tools_lab_2
+./development_of_information_security_tools_lab_2 <PATH> min-dont-care
 ```
+
+Поддерживаемые стратегии ветвления:
+- `min-dont-care` или `min`
+- `first-free` или `first`
