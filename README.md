@@ -152,3 +152,12 @@ cmake --build .
 Поддерживаемые стратегии ветвления:
 - `min-dont-care` или `min`
 - `first-free` или `first`
+
+## 4. Тестирование
+Для проверки работы решателя в проекте подготовлен набор входных файлов в каталоге `SatExamples`.
+
+Варианты запуска тестов:
+```bash
+./development_of_information_security_tools_lab_2 ../SatExamples/sat_ex_1.pla min-dont-care
+./development_of_information_security_tools_lab_2 ../SatExamples/sat_ex_1.pla first-free
+```
