@@ -161,3 +161,10 @@ cmake --build .
 ./development_of_information_security_tools_lab_2 ../SatExamples/sat_ex_1.pla min-dont-care
 ./development_of_information_security_tools_lab_2 ../SatExamples/sat_ex_1.pla first-free
 ```
+
+## 5. GitHub Actions: PVS-Studio и Valgrind
+В репозиторий добавлен workflow `.github/workflows/analysis.yml`, который:
+- собирает проект через CMake;
+- запускает динамический анализ через Valgrind;
+- запускает статический анализ через PVS-Studio;
+- публикует отчеты в artifacts.
