@@ -7,5 +7,6 @@ target_include_directories(bool_interval PUBLIC
 )
 
 target_link_libraries(bool_interval PUBLIC
+    lab2_allocator
     BBV
 )

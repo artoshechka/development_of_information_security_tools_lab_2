@@ -26,6 +26,32 @@ static std::string trim(const std::string &value)
 	return value.substr(begin, end - begin + 1);
 }
 
+static void DestroyTree(NodeBoolTree *root)
+{
+	if (root == nullptr) {
+		return;
+	}
+
+	std::stack<NodeBoolTree *> nodes;
+	nodes.push(root);
+
+	while (!nodes.empty()) {
+		NodeBoolTree *node = nodes.top();
+		nodes.pop();
+
+		if (node->lt != nullptr) {
+			nodes.push(node->lt);
+		}
+
+		if (node->rt != nullptr) {
+			nodes.push(node->rt);
+		}
+
+		delete node->eq;
+		delete node;
+	}
+}
+
 
 int main(int argc, char *argv[])
 {
@@ -206,6 +232,14 @@ int main(int argc, char *argv[])
 		} else {
 			cout << "Root is not exists!";
 		}
+
+		DestroyTree(startNode);
+
+		for (int i = 0; i < cnfSize; i++) {
+			delete CNF[i];
+		}
+
+		delete[] CNF;
 
 	} else {
 		std::cout << "File does not exists.\n";
