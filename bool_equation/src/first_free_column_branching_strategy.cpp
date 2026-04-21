@@ -1,0 +1,21 @@
+#include "first_free_column_branching_strategy.h"
+
+#include "boolequation.h"
+
+IMPLEMENT_ALLOCATOR(FirstFreeColumnBranchingStrategy, 0, 0)
+
+int FirstFreeColumnBranchingStrategy::ChooseColumn(BoolEquation &equation) const
+{
+	for (int i = 0; i < equation.mask.getSize(); i++) {
+		if (equation.mask[i] == 0) {
+			return i;
+		}
+	}
+
+	return -1;
+}
+
+const char *FirstFreeColumnBranchingStrategy::GetName() const
+{
+	return "first-free";
+}
