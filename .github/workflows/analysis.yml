@@ -1,0 +1,43 @@
+name: Static and Dynamic Analysis
+
+on:
+  workflow_dispatch:
+
+jobs:
+  valgrind:
+    name: Valgrind
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install build tools and Valgrind
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y cmake g++ make valgrind
+
+      - name: Configure CMake
+        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+
+      - name: Build
+        run: cmake --build build -j$(nproc)
+
+      - name: Run Valgrind
+        run: |
+          valgrind \
+            --leak-check=full \
+            --show-leak-kinds=all \
+            --track-origins=yes \
+            --error-exitcode=1 \
+            ./build/development_of_information_security_tools_lab_2 \
+            ./SatExamples/sat_ex_1.pla \
+            min-dont-care \
+            2>&1 | tee build/valgrind.log
+
+      - name: Upload Valgrind log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: valgrind-log
+          path: build/valgrind.log
