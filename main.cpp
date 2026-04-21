@@ -7,11 +7,19 @@
 #include <ostream>
 #include <memory>
 #include <stdexcept>
+#include <new>
+#include <cassert>
 #include "NodeBoolTree.h"
 #include "branching_strategy_factory.h"
 #include "boolinterval.h"
 #include "boolequation.h"
 #include "BBV.h"
+
+static void out_of_memory()
+{
+	// Called by global new or by Allocator when pool allocation fails.
+	assert(0 && "Out of memory");
+}
 
 static std::string trim(const std::string &value)
 {
@@ -62,6 +70,8 @@ static void DestroyTree(NodeBoolTree *root)
 
 int main(int argc, char *argv[])
 {
+	std::set_new_handler(out_of_memory);
+
 	if (argc < 2) {
 		std::cout << "Usage: " << argv[0] << " <input_file> [strategy_name]\n";
 		PrintAvailableStrategies();

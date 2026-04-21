@@ -2,6 +2,7 @@
 #define MIN_DONT_CARE_BRANCHING_STRATEGY_H
 
 #include "branching_strategy.h"
+#include "Allocator.h"
 
 ///@brief Стратегия выбора свободного столбца с минимальным числом символов '-'.
 class MinDontCareBranchingStrategy : public BranchingStrategy
@@ -15,6 +16,8 @@ public:
 	///@brief Возвращает идентификатор стратегии.
 	///@return C-строка с именем стратегии.
 	const char *GetName() const;
+
+	DECLARE_ALLOCATOR
 };
 
 #endif // MIN_DONT_CARE_BRANCHING_STRATEGY_H
