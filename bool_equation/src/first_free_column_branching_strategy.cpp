@@ -2,6 +2,8 @@
 
 #include "boolequation.h"
 
+IMPLEMENT_ALLOCATOR(FirstFreeColumnBranchingStrategy, 0, 0)
+
 int FirstFreeColumnBranchingStrategy::ChooseColumn(BoolEquation &equation) const
 {
 	for (int i = 0; i < equation.mask.getSize(); i++) {

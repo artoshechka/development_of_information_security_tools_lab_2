@@ -2,6 +2,7 @@
 #define FIRST_FREE_COLUMN_BRANCHING_STRATEGY_H
 
 #include "branching_strategy.h"
+#include "Allocator.h"
 
 ///@brief Стратегия выбора первого свободного столбца слева направо.
 class FirstFreeColumnBranchingStrategy : public BranchingStrategy
@@ -15,6 +16,8 @@ public:
 	///@brief Возвращает идентификатор стратегии.
 	///@return C-строка с именем стратегии.
 	const char *GetName() const;
+
+	DECLARE_ALLOCATOR
 };
 
 #endif // FIRST_FREE_COLUMN_BRANCHING_STRATEGY_H

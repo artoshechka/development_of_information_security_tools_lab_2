@@ -5,6 +5,8 @@
 
 #include "boolequation.h"
 
+IMPLEMENT_ALLOCATOR(MinDontCareBranchingStrategy, 0, 0)
+
 int MinDontCareBranchingStrategy::ChooseColumn(BoolEquation &equation) const
 {
 	std::vector<int> indexes;
