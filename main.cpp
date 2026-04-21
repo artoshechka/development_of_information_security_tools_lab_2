@@ -18,7 +18,7 @@
 static void out_of_memory()
 {
 	// Called by global new or by Allocator when pool allocation fails.
-	assert(0 && "Out of memory");
+    throw std::bad_alloc();
 }
 
 static std::string trim(const std::string &value)
