@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.16)
 
 add_executable(laba_SAT1
     ../main.cpp
+    src/nodebooltree.cpp
 )
 
 target_include_directories(laba_SAT1 PRIVATE
@@ -9,6 +10,5 @@ target_include_directories(laba_SAT1 PRIVATE
 )
 
 target_link_libraries(laba_SAT1 PRIVATE
-    lab2_allocator
     bool_equation
 )

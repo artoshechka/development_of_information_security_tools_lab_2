@@ -5,6 +5,18 @@
 #include <ostream>
 #include <string>
 
+Allocator BoolEquation::allocator_(sizeof(BoolEquation), 0, 0, "BoolEquation");
+
+void *BoolEquation::operator new(std::size_t size)
+{
+	return allocator_.Allocate(size);
+}
+
+void BoolEquation::operator delete(void *pointer)
+{
+	allocator_.Deallocate(pointer);
+}
+
 BoolEquation::BoolEquation(BoolInterval **cnf, BoolInterval *root, int cnfSize, int count, BBV mask)
 {
 	this->cnf = new BoolInterval*[cnfSize];
@@ -32,6 +44,12 @@ BoolEquation::BoolEquation(BoolEquation &equation)
 	this->cnfSize = equation.cnfSize;
 	this->count = equation.count;
 	this->mask = equation.mask;
+}
+
+BoolEquation::~BoolEquation()
+{
+	delete [] cnf;
+	delete root;
 }
 
 // Проверка правил
