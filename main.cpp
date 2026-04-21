@@ -26,6 +26,13 @@ static std::string trim(const std::string &value)
 	return value.substr(begin, end - begin + 1);
 }
 
+static void PrintAvailableStrategies()
+{
+	std::cout << "Available branching strategies:\n";
+	std::cout << "  min-dont-care (aliases: min)\n";
+	std::cout << "  first-free (aliases: first)\n";
+}
+
 static void DestroyTree(NodeBoolTree *root)
 {
 	if (root == nullptr) {
@@ -55,27 +62,28 @@ static void DestroyTree(NodeBoolTree *root)
 
 int main(int argc, char *argv[])
 {
+	if (argc < 2) {
+		std::cout << "Usage: " << argv[0] << " <input_file> [strategy_name]\n";
+		PrintAvailableStrategies();
+		return 1;
+	}
+
 	std::string strategyName = "min-dont-care";
+	if (argc > 2) {
+		strategyName = argv[2];
+	}
 
 	std::unique_ptr<BranchingStrategy> branchingStrategy;
 	try {
 		branchingStrategy = BranchingStrategyFactory::CreateByName(strategyName);
 	} catch (const std::invalid_argument &error) {
 		std::cout << error.what() << "\n";
+		PrintAvailableStrategies();
 		return 1;
 	}
 
 	std::vector<std::string> full_file_list;
-	std::string filepath;
-	//std::cout << "Input file path...\n";
-	//std::cin >> filepath;
-	// Hardcode input
-	//	filepath = "sat_ex_2.pla";
-	//filepath = "Sat_ex11_3.pla";
-	filepath = "/Users/artoshechka/coding/development_of_information_security_tools_lab_2/SatExamples/sat_ex_1.pla";
-	if (argc > 2) {
-		filepath = argv[2];
-	}
+	std::string filepath = argv[1];
 
 	std::cout << "Branching strategy: " << branchingStrategy->GetName() << "\n";
 	std::cout << "Input file: " << filepath << "\n";

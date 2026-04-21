@@ -32,3 +32,17 @@ add_subdirectory(BBV)
 add_subdirectory(bool_interval)
 add_subdirectory(bool_equation)
 add_subdirectory(SAT_DPLL)
+
+add_executable(${PROJECT_NAME}
+	main.cpp
+)
+
+target_include_directories(${PROJECT_NAME} PRIVATE
+	${CMAKE_CURRENT_SOURCE_DIR}
+	${CMAKE_CURRENT_SOURCE_DIR}/SAT_DPLL
+)
+
+target_link_libraries(${PROJECT_NAME} PRIVATE
+	bool_equation
+	sat_dpll
+)
