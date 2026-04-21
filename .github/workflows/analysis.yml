@@ -45,18 +45,31 @@ jobs:
   pvs-studio:
     name: PVS-Studio
     runs-on: ubuntu-latest
-    if: ${{ secrets.PVS_STUDIO_USERNAME != '' && secrets.PVS_STUDIO_KEY != '' }}
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Check PVS-Studio credentials
+        id: pvs_credentials
+        env:
+          PVS_STUDIO_USERNAME: ${{ secrets.PVS_STUDIO_USERNAME }}
+          PVS_STUDIO_KEY: ${{ secrets.PVS_STUDIO_KEY }}
+        run: |
+          if [ -n "$PVS_STUDIO_USERNAME" ] && [ -n "$PVS_STUDIO_KEY" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Install build tools
+        if: ${{ steps.pvs_credentials.outputs.enabled == 'true' }}
         run: |
           sudo apt-get update
           sudo apt-get install -y cmake g++ make wget gnupg software-properties-common
 
       - name: Install PVS-Studio
+        if: ${{ steps.pvs_credentials.outputs.enabled == 'true' }}
         run: |
           wget -q -O - https://files.viva64.com/etc/pubkey.txt | sudo apt-key add -
           sudo wget -q -O /etc/apt/sources.list.d/viva64.list https://files.viva64.com/etc/viva64.list
@@ -64,18 +77,22 @@ jobs:
           sudo apt-get install -y pvs-studio
 
       - name: Configure CMake
+        if: ${{ steps.pvs_credentials.outputs.enabled == 'true' }}
         run: cmake -S . -B build -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 
       - name: Build
+        if: ${{ steps.pvs_credentials.outputs.enabled == 'true' }}
         run: cmake --build build -j$(nproc)
 
       - name: Set PVS-Studio credentials
+        if: ${{ steps.pvs_credentials.outputs.enabled == 'true' }}
         env:
           PVS_STUDIO_USERNAME: ${{ secrets.PVS_STUDIO_USERNAME }}
           PVS_STUDIO_KEY: ${{ secrets.PVS_STUDIO_KEY }}
         run: pvs-studio-analyzer credentials "$PVS_STUDIO_USERNAME" "$PVS_STUDIO_KEY"
 
       - name: Run PVS-Studio analysis
+        if: ${{ steps.pvs_credentials.outputs.enabled == 'true' }}
         run: |
           pvs-studio-analyzer analyze \
             -f build/compile_commands.json \
@@ -83,6 +100,7 @@ jobs:
             -o build/pvs.log
 
       - name: Convert report
+        if: ${{ steps.pvs_credentials.outputs.enabled == 'true' }}
         run: |
           plog-converter \
             -a GA:1,2 \
@@ -91,7 +109,7 @@ jobs:
             build/pvs.log
 
       - name: Upload PVS-Studio artifacts
-        if: always()
+        if: ${{ always() && steps.pvs_credentials.outputs.enabled == 'true' }}
         uses: actions/upload-artifact@v4
         with:
           name: pvs-studio-report
