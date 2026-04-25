@@ -150,7 +150,7 @@ BBV BBV::operator=(BBV &V) {
     len = V.len; // переписываем значения размеров и удаляем существующий вектор
     size = V.size;
     if (vec != NULL)
-      delete vec;
+      delete[] vec;
     vec = new byteDefinition[size]; // захватываем память под новый вектор и
                                     // переписывем туда переданный вектор
     if (vec != NULL) {
@@ -168,7 +168,7 @@ BBV BBV::operator=(const char *str) {
     len = strlen(str); // вычисляем размеры для вектора и удаляем старый вектор
     size = (len - 1) / 8 + 1;
     if (vec != NULL)
-      delete vec;
+      delete[] vec;
     vec =
         new byteDefinition[size]; // захватываем память для нового вектора и
                                   // переписываем в его биты соотв. знач. строки
