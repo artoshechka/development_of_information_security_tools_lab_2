@@ -89,7 +89,7 @@ void BBV::Init(const char *str) {
     len = strlen(str); // вычисляем размеры для вектора
     size = (len - 1) / 8 + 1;
     if (vec != NULL) // если вектор сущестовал, то мы его удаляем
-      delete vec;
+      delete[] vec;
     vec = new byteDefinition[size]; // захватываем память под новый вектор и
                                     // переписываем в него значения из строки
     if (vec != NULL) {
