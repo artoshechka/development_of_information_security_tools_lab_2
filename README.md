@@ -75,7 +75,6 @@ class BoolEquation {
 class BranchingStrategy {
 	<<interface>>
 	+ChooseColumn(BoolEquation&) int
-	+GetName() const char*
 }
 class BranchingStrategyFactory
 class FirstFreeColumnBranchingStrategy
