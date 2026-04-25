@@ -20,16 +20,16 @@ classDiagram
 direction LR
 
 class X {
-	-byte* ptr
+	-byteDefinition* ptr
 	-int index
 	+X()
-	+X(byte* vec, int k)
+	+X(byteDefinition* vec, int k)
 	+operator=(int k) X
 	+operator int() int
 	+operator=(X& v) X
 }
 class BBV {
-	-byte* vec
+	-byteDefinition* vec
 	-int size
 	-int len
 	+BBV()

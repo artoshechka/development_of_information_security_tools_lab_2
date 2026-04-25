@@ -19,8 +19,8 @@ BBV::BBV() {
 
 BBV::BBV(int size_v) {
   if (size_v > 0) {
-    vec = new byte[(size_v - 1) / 8 +
-                   1]; // избегаем случай размера кратного восьми
+    vec = new byteDefinition[(size_v - 1) / 8 +
+                             1]; // избегаем случай размера кратного восьми
     if (vec != NULL) // если выделилась память, то заполняем поля размера
                      // массива, кол-ва ячеек
     {
@@ -40,13 +40,13 @@ BBV::BBV(const char *str) {
     len = strlen(str); // заполняем поля размера вектора и вычисляем кол-во
                        // ячеек
     size = (len - 1) / 8 + 1;
-    vec = new byte[size];
+    vec = new byteDefinition[size];
     if (vec != NULL) {
       int i = 0, j = 8, k = 0;
-      byte mask = 1;
+      byteDefinition mask = 1;
       vec[0] ^= vec[0]; // чистим содержимое первой ячейки
-      while (i < len) // проходим по всем битам и записываем в них
-                      // соответствующее значение из строки
+      while (i < len)   // проходим по всем битам и записываем в них
+                        // соответствующее значение из строки
       {
         if (j > 0) {
           if (str[i] != '0')
@@ -72,8 +72,9 @@ BBV::BBV(BBV &V) {
   {
     size = V.size; // переписываем значение размеров
     len = V.len;
-    vec = new byte[size]; // захватываем память под новый веторк и переписываем
-                          // в него значение из переданного вектора
+    vec = new byteDefinition[size]; // захватываем память под новый веторк и
+                                    // переписываем в него значение из
+                                    // переданного вектора
     if (vec != NULL) {
       for (int i = 0; i < size; i++)
         vec[i] = V.vec[i];
@@ -89,11 +90,11 @@ void BBV::Init(const char *str) {
     size = (len - 1) / 8 + 1;
     if (vec != NULL) // если вектор сущестовал, то мы его удаляем
       delete vec;
-    vec = new byte[size]; // захватываем память под новый вектор и переписываем
-                          // в него значения из строки
+    vec = new byteDefinition[size]; // захватываем память под новый вектор и
+                                    // переписываем в него значения из строки
     if (vec != NULL) {
       int i = 0, j = 8, k = 0;
-      byte mask = 1;
+      byteDefinition mask = 1;
       vec[0] ^= vec[0];
       while (i < len) {
         if (j > 0) {
@@ -119,7 +120,7 @@ void BBV::Set0(int k) {
   if (vec != NULL && k >= 0 &&
       k < len) // проверяем существование вектора и корректность индекса
   {
-    byte mask = 1;
+    byteDefinition mask = 1;
     int j = k / 8; // номер нужной ячейки
     if (k >= 7)
       k %= 8;
@@ -133,7 +134,7 @@ void BBV::Set1(int k) {
   if (vec != NULL && k >= 0 &&
       k < len) // проверяем существование вектора и корректность индекса
   {
-    byte mask = 1;
+    byteDefinition mask = 1;
     int j = k / 8; // номер нужной ячейки
     if (k >= 7)
       k %= 8;
@@ -150,8 +151,8 @@ BBV BBV::operator=(BBV &V) {
     size = V.size;
     if (vec != NULL)
       delete vec;
-    vec = new byte[size]; // захватываем память под новый вектор и переписывем
-                          // туда переданный вектор
+    vec = new byteDefinition[size]; // захватываем память под новый вектор и
+                                    // переписывем туда переданный вектор
     if (vec != NULL) {
       for (int i = 0; i < size; i++)
         vec[i] = V.vec[i];
@@ -168,11 +169,12 @@ BBV BBV::operator=(const char *str) {
     size = (len - 1) / 8 + 1;
     if (vec != NULL)
       delete vec;
-    vec = new byte[size]; // захватываем память для нового вектора и
-                          // переписываем в его биты соотв. знач. строки
+    vec =
+        new byteDefinition[size]; // захватываем память для нового вектора и
+                                  // переписываем в его биты соотв. знач. строки
     if (vec != NULL) {
       int i = 0, j = 8, k = 0;
-      byte mask = 1;
+      byteDefinition mask = 1;
       vec[0] ^= vec[0];
       while (i < len) {
         if (j > 0) {
@@ -267,7 +269,7 @@ BBV BBV::operator>>(int k) {
     if (k % 8 == 0)
       start = k / 8;
     k %= 8; // сдвиг в каждой ячейке
-    byte mask = 0;
+    byteDefinition mask = 0;
     for (int i = 0; start + i < size; i++) {
       res.vec[start + i] = vec[i] << k; // записываем сдвинутую ячейку
       res.vec[start + i] |=
@@ -299,7 +301,7 @@ BBV BBV::operator<<(int k) {
     if (k % 8 == 0)
       start = size - 1 - k / 8;
     k %= 8; // сдвиг в каждой ячейке
-    byte mask = 0;
+    byteDefinition mask = 0;
     for (int i = 0; start - i >= 0; i++) {
       res.vec[start - i] =
           vec[size - 1 - i] >>
@@ -328,7 +330,7 @@ BBV::operator char *() {
     char *str = new char[len + 1]; // захватываем память под строку
     if (str != NULL) {
       int k = 0;
-      byte mask = 1;
+      byteDefinition mask = 1;
       for (int i = 0; i < len;
            i++) // переписываем значения из битов в ячейки строки
       {
@@ -354,7 +356,7 @@ int BBV::getWeight() {
   if (vec != NULL) {
     int count = 0;
     for (int i = 0; i < size; i++) {
-      byte v = vec[i];
+      byteDefinition v = vec[i];
       while (v != 0) {
         count++;
         v &= (v - 1);
@@ -372,8 +374,8 @@ X::X() {
   index = 0;
 }
 
-X::X(byte *vec, int k) // передаем в конструктор указатель на нужную ячейку и
-                       // номер бита в ней
+X::X(byteDefinition *vec, int k) // передаем в конструктор указатель на нужную
+                                 // ячейку и номер бита в ней
 {
   if (vec != NULL && k >= 0 &&
       k <= 7) // проверяем допустимость номера бита и существование ячейки
@@ -388,7 +390,7 @@ X X::operator=(int k) {
   if (ptr != NULL) // проверяем существует ли ячейка с битом, в который будет
                    // производится запись значения
   {
-    byte mask =
+    byteDefinition mask =
         1; // подготавливаем маску с правильно размещенным битом со значение 1
     mask <<= index;
     if (k == 0) // производим запись в ячейку
@@ -402,8 +404,8 @@ X X::operator=(int k) {
 X::operator int() {
   if (ptr != NULL) // проверяем сущестование ячейки с нужным битом
   {
-    int k = 0;     // полагаем что нужный бит равен 0
-    byte mask = 1; // формируем маску с выставленной 1 в нужном бите
+    int k = 0;               // полагаем что нужный бит равен 0
+    byteDefinition mask = 1; // формируем маску с выставленной 1 в нужном бите
     mask <<= index;
     if (*ptr & mask) // если предположение раввенства 0 не верно, запишем в k
                      // новое значение 1
@@ -415,7 +417,7 @@ X::operator int() {
 
 X X::operator=(X &v) {
   if (ptr != NULL && v.ptr != NULL) {
-    byte mask =
+    byteDefinition mask =
         1; // подготавливаем маску с правильно размещенным битом со значение 1
     mask <<= v.index;
     if (mask & *(v.ptr)) // производим запись в ячейку в нужный бит
@@ -430,7 +432,7 @@ ostream &operator<<(ostream &r, BBV &V) {
   if (V.vec != NULL) // првоверяем существование ячеек булева вектора
   {
     int i = 0, j = 8, k = 0;
-    byte mask = 1;
+    byteDefinition mask = 1;
     while (i < V.len) // цикл для прохода по всем битам вектора
     {
       if (j > 0) // в каждую ячейку заходим 8 раз. счетчик j отвечает за
@@ -467,8 +469,8 @@ istream &operator>>(istream &r, BBV &V) // return r;
   }
   char *str =
       new char[str_size + 1]; // создаем строку для вектора у учетом символа \0
-  if (str != NULL) // если память выделилась, то вводим в строку и
-                   // инициализируем ей вектор
+  if (str != NULL)            // если память выделилась, то вводим в строку и
+                              // инициализируем ей вектор
   {
     cout << "Input BBV:\n";
     cin >> str;
