@@ -19,6 +19,10 @@
 classDiagram
 direction LR
 
+class Allocator {
+	+Allocate(size_t size) void*
+	+Deallocate(void* pBlock) void
+}
 class X {
 	-byteDefinition* ptr
 	-int index
@@ -32,17 +36,25 @@ class BBV {
 	-byteDefinition* vec
 	-int size
 	-int len
+	+~BBV()
 	+BBV()
 	+BBV(int size)
 	+BBV(const char* str)
 	+BBV(BBV& V)
-	+~BBV()
 	+Init(const char* str) void
 	+Set0(int k) void
 	+Set1(int k) void
 	+operator=(BBV& V) BBV
 	+operator=(const char* str) BBV
+	+operator==(BBV& V) bool
+	+operator|(BBV& V) BBV
+	+operator&(BBV& V) BBV
+	+operator^(BBV& V) BBV
+	+operator~() BBV
+	+operator>>(int k) BBV
+	+operator<<(int k) BBV
 	+operator[](int k) X
+	+operator char*() char*
 	+getWeight() int
 	+getSize() int
 }
@@ -54,9 +66,19 @@ class BoolInterval {
 	+BoolInterval(const char* vector)
 	+BoolInterval(BBV& vec_in, BBV& dnc_in)
 	+setInterval(BBV& vec, BBV& dnc) void
+	+operator=(BoolInterval& ibv) BoolInterval&
+	+operator==(BoolInterval& ibv) bool
+	+operator!=(BoolInterval& ibv) bool
+	+operator string() string
 	+length() int
 	+rang() int
+	+isOrthogonal(BoolInterval& ibv) bool
+	+isEqualComponent(BoolInterval& ibv) bool
 	+mergeInterval(BoolInterval& ibv) BoolInterval&
+	+isIntersection(BoolInterval& ibv) bool
+	+isAbsorb(BoolInterval& ibv) bool
+	+getValue(int ix) char
+	+setValue(char value, int ix) void
 }
 class BoolEquation {
 	+BoolInterval** cnf
@@ -68,27 +90,53 @@ class BoolEquation {
 	+BoolEquation(BoolEquation& equation)
 	+~BoolEquation()
 	+CheckRules() int
+	+Rule1Row1(BoolInterval* interval) bool
+	+Rule2RowNull(BoolInterval* interval) bool
+	+Rule3ColNull(BBV vector) void
+	+Rule4Col0(BBV vector) bool
+	+Rule5Col1(BBV vector) bool
 	+Simplify(int ixCol, char value) void
 	+ChooseColForBranching() int
 	+ChooseColForBranching(const BranchingStrategy& strategy) int
 }
 class BranchingStrategy {
 	<<interface>>
-	+ChooseColumn(BoolEquation&) int
+	+~BranchingStrategy()
+	+ChooseColumn(BoolEquation& equation) int
 }
-class BranchingStrategyFactory
-class FirstFreeColumnBranchingStrategy
-class MinDontCareBranchingStrategy
-class NodeBoolTree
+class BranchingStrategyFactory {
+	+CreateByName(const string& name) unique_ptr~BranchingStrategy~
+}
+class FirstFreeColumnBranchingStrategy {
+	+ChooseColumn(BoolEquation& equation) int
+}
+class MinDontCareBranchingStrategy {
+	+ChooseColumn(BoolEquation& equation) int
+}
+class NodeBoolTree {
+	+NodeBoolTree(BoolEquation* equation)
+	+~NodeBoolTree()
+	+NodeBoolTree* lt
+	+NodeBoolTree* rt
+	+BoolEquation* eq
+}
 
-BBV *-- X : uses
+BBV *-- X : proxy access
 BoolInterval *-- BBV : contains
-BoolEquation *-- BoolInterval : cnf/root
+BoolEquation o-- "0..*" BoolInterval : cnf
+BoolEquation --> BoolInterval : root
 BoolEquation ..> BranchingStrategy : strategy
 BranchingStrategy <|-- FirstFreeColumnBranchingStrategy
 BranchingStrategy <|-- MinDontCareBranchingStrategy
 BranchingStrategyFactory ..> BranchingStrategy : creates
 NodeBoolTree --> BoolEquation : eq
+X ..> Allocator : DECLARE_ALLOCATOR
+BBV ..> Allocator : DECLARE_ALLOCATOR
+BoolInterval ..> Allocator : DECLARE_ALLOCATOR
+BoolEquation ..> Allocator : DECLARE_ALLOCATOR
+NodeBoolTree ..> Allocator : DECLARE_ALLOCATOR
+FirstFreeColumnBranchingStrategy ..> Allocator : DECLARE_ALLOCATOR
+MinDontCareBranchingStrategy ..> Allocator : DECLARE_ALLOCATOR
 ```
 ### Архитектура решения
 Основные компоненты:
