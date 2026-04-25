@@ -77,7 +77,7 @@ int main(int argc, char *argv[]) {
     strategyName = argv[2];
   }
 
-  std::unique_ptr<BranchingStrategy> branchingStrategy;
+  std::shared_ptr<BranchingStrategy> branchingStrategy;
   try {
     branchingStrategy = BranchingStrategyFactory::CreateByName(strategyName);
   } catch (const std::invalid_argument &error) {

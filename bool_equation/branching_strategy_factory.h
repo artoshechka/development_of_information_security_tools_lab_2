@@ -14,7 +14,7 @@ public:
 	///@param name Имя стратегии (например: "min-dont-care" или "first-free").
 	///@return Умный указатель на созданную стратегию.
 	///@throws std::invalid_argument Если передано неподдерживаемое имя.
-	static std::unique_ptr<BranchingStrategy> CreateByName(const std::string &name);
+	static std::shared_ptr<BranchingStrategy> CreateByName(const std::string &name);
 };
 
 #endif // BRANCHING_STRATEGY_FACTORY_H
