@@ -2,7 +2,7 @@
 
 #include "boolequation.h"
 
-IMPLEMENT_ALLOCATOR(FirstFreeColumnBranchingStrategy, 0, 0)
+IMPLEMENT_ALLOCATOR(FirstFreeColumnBranchingStrategy, 1, 0)
 
 int FirstFreeColumnBranchingStrategy::ChooseColumn(
     BoolEquation &equation) const {
