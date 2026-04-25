@@ -15,9 +15,6 @@ public:
 	///@return Индекс столбца с нуля или -1, если свободных столбцов нет.
 	virtual int ChooseColumn(BoolEquation &equation) const = 0;
 
-	///@brief Возвращает человекочитаемый идентификатор стратегии.
-	///@return C-строка с именем стратегии.
-	virtual const char *GetName() const = 0;
 };
 
 #endif // BRANCHING_STRATEGY_H

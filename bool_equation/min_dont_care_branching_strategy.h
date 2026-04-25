@@ -13,10 +13,6 @@ public:
 	///@return Индекс столбца с нуля или -1, если свободных столбцов нет.
 	int ChooseColumn(BoolEquation &equation) const;
 
-	///@brief Возвращает идентификатор стратегии.
-	///@return C-строка с именем стратегии.
-	const char *GetName() const;
-
 	DECLARE_ALLOCATOR
 };
 
