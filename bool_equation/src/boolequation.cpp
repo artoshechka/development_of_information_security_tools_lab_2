@@ -5,15 +5,7 @@
 #include <string>
 #include <vector>
 
-Allocator BoolEquation::allocator_(sizeof(BoolEquation), 0, 0, "BoolEquation");
-
-void *BoolEquation::operator new(std::size_t size) {
-  return allocator_.Allocate(size);
-}
-
-void BoolEquation::operator delete(void *pointer) {
-  allocator_.Deallocate(pointer);
-}
+IMPLEMENT_ALLOCATOR(BoolEquation, 0, 0)
 
 BoolEquation::BoolEquation(BoolInterval **cnf, BoolInterval *root, int cnfSize,
                            int count, BBV mask) {

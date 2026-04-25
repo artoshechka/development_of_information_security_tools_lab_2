@@ -27,11 +27,7 @@ public:
 	void Simplify(int ixCol, char value);
 	int ChooseColForBranching();
 	int ChooseColForBranching(const BranchingStrategy &strategy);
-	static void *operator new(std::size_t size);
-	static void operator delete(void *pointer);
-
-private:
-	static Allocator allocator_;
+	DECLARE_ALLOCATOR
 };
 
 #endif // BOOLEQUATION_H
