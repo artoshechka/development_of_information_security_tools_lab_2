@@ -5,15 +5,15 @@
 #include "Allocator.h"
 using namespace std;
 
-typedef unsigned char byte;
+typedef unsigned char byteDefinition;
 
 class X
 {
-    byte* ptr;//указатель на ячейку, где хранится нужный бит
+    byteDefinition* ptr;//указатель на ячейку, где хранится нужный бит
     int index;//номер бита в ячейке
 public:
     X();//конструктор по умолчаню
-    X(byte* vec, int k);//конструктор с параметрами
+    X(byteDefinition* vec, int k);//конструктор с параметрами
     X operator=(int k);//перегрузка оператора присвоения
     operator int();//перегрузка типа
     X operator=(X& v);
@@ -25,7 +25,7 @@ public:
 class BBV
 {
     friend X;
-    byte* vec;//указатель на массив ячеек
+    byteDefinition* vec;//указатель на массив ячеек
     int size;//количество ячеек
     int len;//количество разрядов
 public:
