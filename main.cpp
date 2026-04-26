@@ -79,7 +79,7 @@ int main(int argc, char *argv[]) {
 
   std::shared_ptr<BranchingStrategy> branchingStrategy;
   try {
-    branchingStrategy = BranchingStrategyFactory::CreateByName(strategyName);
+    branchingStrategy = BranchingStrategyFactory::GetStrategy(strategyName);
   } catch (const std::invalid_argument &error) {
     std::cout << error.what() << "\n";
     PrintAvailableStrategies();
