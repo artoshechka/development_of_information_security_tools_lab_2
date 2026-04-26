@@ -105,7 +105,7 @@ class BranchingStrategy {
 	+ChooseColumn(BoolEquation& equation) int
 }
 class BranchingStrategyFactory {
-	+CreateByName(const string& name) unique_ptr~BranchingStrategy~
+	+GetStrategy(const string& name) shared_ptr~BranchingStrategy~
 }
 class FirstFreeColumnBranchingStrategy {
 	+ChooseColumn(BoolEquation& equation) int

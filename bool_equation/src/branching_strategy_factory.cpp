@@ -6,15 +6,18 @@
 #include "min_dont_care_branching_strategy.h"
 
 std::shared_ptr<BranchingStrategy>
-BranchingStrategyFactory::CreateByName(const std::string &name) {
+BranchingStrategyFactory::GetStrategy(const std::string &name) {
   if (name == "min-dont-care" || name == "min") {
-    return std::shared_ptr<BranchingStrategy>(
-        new MinDontCareBranchingStrategy());
+    static std::shared_ptr<BranchingStrategy> instance =
+        std::shared_ptr<BranchingStrategy>(new MinDontCareBranchingStrategy());
+    return instance;
   }
 
   if (name == "first-free" || name == "first") {
-    return std::shared_ptr<BranchingStrategy>(
-        new FirstFreeColumnBranchingStrategy());
+    static std::shared_ptr<BranchingStrategy> instance =
+        std::shared_ptr<BranchingStrategy>(
+            new FirstFreeColumnBranchingStrategy());
+    return instance;
   }
 
   throw std::invalid_argument("Unknown branching strategy. Available values: "
