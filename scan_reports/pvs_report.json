@@ -1,0 +1,4947 @@
+{
+  "warnings": [
+    {
+      "code": "V2575",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The global namespace should only contain 'main', namespace declarations and extern 'C' declaration.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 6,
+          "endLine": 6,
+          "file": "development_of_information_security_tools_lab_2/SAT_DPLL/NodeBoolTree.h",
+          "navigation": {
+            "currentLine": 9336243,
+            "previousLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-7-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2575",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The global namespace should only contain 'main', namespace declarations and extern 'C' declaration.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 8,
+          "endLine": 8,
+          "file": "development_of_information_security_tools_lab_2/SAT_DPLL/NodeBoolTree.h",
+          "navigation": {
+            "currentLine": 4670247,
+            "previousLine": 0,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-7-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'new' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 12,
+          "endLine": 12,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/branching_strategy_factory.cpp",
+          "navigation": {
+            "currentLine": -1370015866,
+            "previousLine": 1797155183,
+            "nextLine": 1414237,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V824",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "It is recommended to use the 'make_shared' function to create smart pointers.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 12,
+          "endLine": 12,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/branching_strategy_factory.cpp",
+          "navigation": {
+            "currentLine": -1370015866,
+            "previousLine": 1797155183,
+            "nextLine": 1414237,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'new' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 19,
+          "endLine": 19,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/branching_strategy_factory.cpp",
+          "navigation": {
+            "currentLine": 749537231,
+            "previousLine": 879445057,
+            "nextLine": 1414237,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V824",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "It is recommended to use the 'make_shared' function to create smart pointers.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 18,
+          "endLine": 18,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/branching_strategy_factory.cpp",
+          "navigation": {
+            "currentLine": 879445057,
+            "previousLine": 1797155183,
+            "nextLine": 749537231,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2578",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The string literal should not decay to a pointer to char. Consider inspecting the first function argument.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 23,
+          "endLine": 23,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/branching_strategy_factory.cpp",
+          "navigation": {
+            "currentLine": -1089153411,
+            "previousLine": 0,
+            "nextLine": 1042640353,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-2-12",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2506",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "A function should have a single point of exit at the end.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 8,
+          "endLine": 8,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/branching_strategy_factory.cpp",
+          "navigation": {
+            "currentLine": -1707761100,
+            "previousLine": 0,
+            "nextLine": -80607537,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 13,
+          "endLine": 13,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/branching_strategy_factory.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 20,
+          "endLine": 20,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/branching_strategy_factory.cpp"
+        }
+      ],
+      "sastId": "MISRA-CPP-6-6-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2575",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The global namespace should only contain 'main', namespace declarations and extern 'C' declaration.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 7,
+          "endLine": 7,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/branching_strategy.h",
+          "navigation": {
+            "currentLine": 149475667,
+            "previousLine": 522524,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-7-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2575",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The global namespace should only contain 'main', namespace declarations and extern 'C' declaration.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 8,
+          "endLine": 8,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/first_free_column_branching_strategy.h",
+          "navigation": {
+            "currentLine": 734665606,
+            "previousLine": 32734,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-7-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2575",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The global namespace should only contain 'main', namespace declarations and extern 'C' declaration.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 4,
+          "endLine": 4,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/branching_strategy.h",
+          "navigation": {
+            "currentLine": 9336243,
+            "previousLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-7-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2575",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The global namespace should only contain 'main', namespace declarations and extern 'C' declaration.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 10,
+          "endLine": 10,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/branching_strategy_factory.h",
+          "navigation": {
+            "currentLine": -388931247,
+            "previousLine": 32734,
+            "nextLine": 5816,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-7-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2575",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The global namespace should only contain 'main', namespace declarations and extern 'C' declaration.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 8,
+          "endLine": 8,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/min_dont_care_branching_strategy.h",
+          "navigation": {
+            "currentLine": 529006978,
+            "previousLine": 261740,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-7-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2575",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The global namespace should only contain 'main', namespace declarations and extern 'C' declaration.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 6,
+          "endLine": 6,
+          "file": "development_of_information_security_tools_lab_2/BBV/BBV.h",
+          "navigation": {
+            "currentLine": 12463563,
+            "previousLine": 4468074,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-7-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V690",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'X' class implements the copy assignment operator, but lacks a copy constructor. It is dangerous to use such a class.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 10,
+          "endLine": 10,
+          "file": "development_of_information_security_tools_lab_2/BBV/BBV.h",
+          "navigation": {
+            "currentLine": 2266,
+            "previousLine": 0,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V688",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "The 'size' function argument possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 56,
+          "endLine": 56,
+          "file": "development_of_information_security_tools_lab_2/BBV/BBV.h",
+          "navigation": {
+            "currentLine": 7901252,
+            "previousLine": 0,
+            "nextLine": 193,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-DCL01-C",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V690",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "The 'BoolInterval' class implements the copy assignment operator, but lacks a copy constructor. It is dangerous to use such a class.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 7,
+          "endLine": 7,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/boolinterval.h",
+          "navigation": {
+            "currentLine": 4668214,
+            "previousLine": 0,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V690",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'BoolEquation' class implements a copy constructor, but lacks the copy assignment operator. It is dangerous to use such a class.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 10,
+          "endLine": 10,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/boolequation.h",
+          "navigation": {
+            "currentLine": 4668100,
+            "previousLine": 0,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2506",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "A function should have a single point of exit at the end.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 7,
+          "endLine": 7,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/first_free_column_branching_strategy.cpp",
+          "navigation": {
+            "currentLine": 1748573165,
+            "previousLine": 0,
+            "nextLine": 717578492,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 11,
+          "endLine": 11,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/first_free_column_branching_strategy.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 15,
+          "endLine": 15,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/first_free_column_branching_strategy.cpp"
+        }
+      ],
+      "sastId": "MISRA-CPP-6-6-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2575",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The global namespace should only contain 'main', namespace declarations and extern 'C' declaration.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 10,
+          "endLine": 10,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/boolequation.h",
+          "navigation": {
+            "currentLine": 4668100,
+            "previousLine": 0,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-7-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2575",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The global namespace should only contain 'main', namespace declarations and extern 'C' declaration.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 8,
+          "endLine": 8,
+          "file": "development_of_information_security_tools_lab_2/BBV/BBV.h",
+          "navigation": {
+            "currentLine": -1682485,
+            "previousLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-7-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2575",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The global namespace should only contain 'main', namespace declarations and extern 'C' declaration.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 7,
+          "endLine": 7,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/boolinterval.h",
+          "navigation": {
+            "currentLine": 4668214,
+            "previousLine": 0,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-7-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2575",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The global namespace should only contain 'main', namespace declarations and extern 'C' declaration.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 10,
+          "endLine": 10,
+          "file": "development_of_information_security_tools_lab_2/BBV/BBV.h",
+          "navigation": {
+            "currentLine": 2266,
+            "previousLine": 0,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-7-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2575",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The global namespace should only contain 'main', namespace declarations and extern 'C' declaration.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 25,
+          "endLine": 25,
+          "file": "development_of_information_security_tools_lab_2/BBV/BBV.h",
+          "navigation": {
+            "currentLine": 9170,
+            "previousLine": 0,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-7-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V688",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "The 'cnfSize' function argument possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 10,
+          "endLine": 10,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp",
+          "navigation": {
+            "currentLine": -1666728446,
+            "previousLine": 0,
+            "nextLine": 9893677,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-DCL01-C",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'new' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 12,
+          "endLine": 12,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp",
+          "navigation": {
+            "currentLine": -539365628,
+            "previousLine": 9893677,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 15,
+          "endLine": 15,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp",
+          "navigation": {
+            "currentLine": 45112605,
+            "previousLine": -1718979731,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V818",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "It is more efficient to use an initialization list 'mask(mask)' rather than an assignment operator.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 10,
+          "endLine": 10,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp",
+          "navigation": {
+            "currentLine": -1666728446,
+            "previousLine": 0,
+            "nextLine": 9893677,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 21,
+          "endLine": 21,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp"
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V820",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "The 'mask' variable is not used after copying. Copying can be replaced with move/swap for optimization.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 21,
+          "endLine": 21,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp",
+          "navigation": {
+            "currentLine": 2824985,
+            "previousLine": 11279635,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'new' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 25,
+          "endLine": 25,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp",
+          "navigation": {
+            "currentLine": -1278579702,
+            "previousLine": -912482829,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 28,
+          "endLine": 28,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp",
+          "navigation": {
+            "currentLine": 1623180184,
+            "previousLine": 363917918,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'new' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 31,
+          "endLine": 31,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp",
+          "navigation": {
+            "currentLine": 1498893210,
+            "previousLine": 0,
+            "nextLine": -2096658508,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'delete' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 38,
+          "endLine": 38,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp",
+          "navigation": {
+            "currentLine": 140967,
+            "previousLine": -1418176859,
+            "nextLine": 69655,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'delete' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 39,
+          "endLine": 39,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp",
+          "navigation": {
+            "currentLine": 69655,
+            "previousLine": 140967,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 48,
+          "endLine": 48,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp",
+          "navigation": {
+            "currentLine": 1449343003,
+            "previousLine": -1718979731,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2506",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "A function should have a single point of exit at the end.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 43,
+          "endLine": 43,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp",
+          "navigation": {
+            "currentLine": -177359480,
+            "previousLine": 113,
+            "nextLine": 8208507,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 54,
+          "endLine": 54,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 59,
+          "endLine": 59,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 63,
+          "endLine": 63,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 86,
+          "endLine": 86,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 117,
+          "endLine": 117,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 121,
+          "endLine": 121,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 124,
+          "endLine": 124,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp"
+        }
+      ],
+      "sastId": "MISRA-CPP-6-6-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2530",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The loop should be terminated with no more than one 'break' or 'goto' statement.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 68,
+          "endLine": 68,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp",
+          "navigation": {
+            "currentLine": 321300097,
+            "previousLine": 805067069,
+            "nextLine": 1466101,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 76,
+          "endLine": 76,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 80,
+          "endLine": 80,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp"
+        }
+      ],
+      "sastId": "MISRA-CPP-6-6-4",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2506",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "A function should have a single point of exit at the end.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 128,
+          "endLine": 128,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp",
+          "navigation": {
+            "currentLine": 99302124,
+            "previousLine": 113,
+            "nextLine": 308207,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 141,
+          "endLine": 141,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 144,
+          "endLine": 144,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp"
+        }
+      ],
+      "sastId": "MISRA-CPP-6-6-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2506",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "A function should have a single point of exit at the end.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 147,
+          "endLine": 147,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp",
+          "navigation": {
+            "currentLine": -816850382,
+            "previousLine": 113,
+            "nextLine": 308207,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 159,
+          "endLine": 159,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 162,
+          "endLine": 162,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp"
+        }
+      ],
+      "sastId": "MISRA-CPP-6-6-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2506",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "A function should have a single point of exit at the end.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 176,
+          "endLine": 176,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp",
+          "navigation": {
+            "currentLine": 1815240860,
+            "previousLine": 0,
+            "nextLine": 376607326,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 181,
+          "endLine": 181,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 185,
+          "endLine": 185,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp"
+        }
+      ],
+      "sastId": "MISRA-CPP-6-6-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2506",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "A function should have a single point of exit at the end.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 188,
+          "endLine": 188,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp",
+          "navigation": {
+            "currentLine": 1815310492,
+            "previousLine": 0,
+            "nextLine": 376607326,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 193,
+          "endLine": 193,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 197,
+          "endLine": 197,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp"
+        }
+      ],
+      "sastId": "MISRA-CPP-6-6-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 202,
+          "endLine": 202,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp",
+          "navigation": {
+            "currentLine": 1449343003,
+            "previousLine": -1718979731,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 209,
+          "endLine": 209,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/boolequation.cpp",
+          "navigation": {
+            "currentLine": 1095823,
+            "previousLine": 1533701965,
+            "nextLine": 8565,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V809",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "Verifying that a pointer value is not NULL is not required. The 'if (vec != __null)' check can be removed.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 10,
+          "endLine": 10,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 372905,
+            "previousLine": 230105,
+            "nextLine": 140841,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'delete' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 11,
+          "endLine": 11,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 140841,
+            "previousLine": 372905,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'if' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 10,
+          "endLine": 10,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 372905,
+            "previousLine": 230105,
+            "nextLine": 140841,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'new' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 22,
+          "endLine": 22,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": -1704822430,
+            "previousLine": 370393,
+            "nextLine": 357,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'for' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 29,
+          "endLine": 29,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 644007517,
+            "previousLine": 45342757,
+            "nextLine": 21495,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V668",
+      "cwe": 571,
+      "falseAlarm": false,
+      "level": 2,
+      "message": "There is no sense in testing the 'vec' pointer against null, as the memory was allocated using the 'new' operator. The exception will be generated in the case of memory allocation error.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 24,
+          "endLine": 24,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 2983302,
+            "previousLine": 357,
+            "nextLine": 433,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-MEM52-CPP",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 31,
+          "endLine": 31,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1483,
+            "previousLine": 21495,
+            "nextLine": 5599,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 33,
+          "endLine": 33,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1483,
+            "previousLine": 5599,
+            "nextLine": 5599,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2513",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The function with the 'strlen' name should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 40,
+          "endLine": 40,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 18729287,
+            "previousLine": 123,
+            "nextLine": 113,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-0-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'new' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 43,
+          "endLine": 43,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": -80425225,
+            "previousLine": 5650469,
+            "nextLine": 745769,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 52,
+          "endLine": 52,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1495727,
+            "previousLine": 12217,
+            "nextLine": 338905,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'if' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 52,
+          "endLine": 52,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1495727,
+            "previousLine": 12217,
+            "nextLine": 338905,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V668",
+      "cwe": 571,
+      "falseAlarm": false,
+      "level": 2,
+      "message": "There is no sense in testing the 'vec' pointer against null, as the memory was allocated using the 'new' operator. The exception will be generated in the case of memory allocation error.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 44,
+          "endLine": 44,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 745769,
+            "previousLine": -80425225,
+            "nextLine": 1248375,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-MEM52-CPP",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 64,
+          "endLine": 64,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1483,
+            "previousLine": 125,
+            "nextLine": 5599,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 66,
+          "endLine": 66,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1483,
+            "previousLine": 5599,
+            "nextLine": 5599,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 80,
+          "endLine": 80,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 2720749,
+            "previousLine": 161001867,
+            "nextLine": 1483,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'for' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 79,
+          "endLine": 79,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 161001867,
+            "previousLine": 745769,
+            "nextLine": 2720749,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V668",
+      "cwe": 571,
+      "falseAlarm": false,
+      "level": 2,
+      "message": "There is no sense in testing the 'vec' pointer against null, as the memory was allocated using the 'new' operator. The exception will be generated in the case of memory allocation error.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 78,
+          "endLine": 78,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 745769,
+            "previousLine": 113,
+            "nextLine": 161001867,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-MEM52-CPP",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 81,
+          "endLine": 81,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1483,
+            "previousLine": 2720749,
+            "nextLine": 5599,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2513",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The function with the 'strlen' name should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 89,
+          "endLine": 89,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 9364661,
+            "previousLine": 123,
+            "nextLine": 5650469,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-0-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V809",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "Verifying that a pointer value is not NULL is not required. The 'if (vec != __null)' check can be removed.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 91,
+          "endLine": 91,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 2983302,
+            "previousLine": 5650469,
+            "nextLine": 140841,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'delete' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 92,
+          "endLine": 92,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 140841,
+            "previousLine": 2983302,
+            "nextLine": -321700946,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'if' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 91,
+          "endLine": 91,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 2983302,
+            "previousLine": 5650469,
+            "nextLine": 140841,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'new' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 93,
+          "endLine": 93,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": -321700946,
+            "previousLine": 140841,
+            "nextLine": 113,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 101,
+          "endLine": 101,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1495727,
+            "previousLine": 12217,
+            "nextLine": 338905,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'if' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 101,
+          "endLine": 101,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1495727,
+            "previousLine": 12217,
+            "nextLine": 338905,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V668",
+      "cwe": 571,
+      "falseAlarm": false,
+      "level": 2,
+      "message": "There is no sense in testing the 'vec' pointer against null, as the memory was allocated using the 'new' operator. The exception will be generated in the case of memory allocation error.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 95,
+          "endLine": 95,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 745769,
+            "previousLine": 113,
+            "nextLine": 1248375,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-MEM52-CPP",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 113,
+          "endLine": 113,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1483,
+            "previousLine": 125,
+            "nextLine": 5599,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 115,
+          "endLine": 115,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1483,
+            "previousLine": 5599,
+            "nextLine": 5597,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 128,
+          "endLine": 128,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 686713,
+            "previousLine": 79893,
+            "nextLine": 1483,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 129,
+          "endLine": 129,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1483,
+            "previousLine": 686713,
+            "nextLine": 5597,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'if' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 139,
+          "endLine": 139,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 12275,
+            "previousLine": 80013,
+            "nextLine": 1831,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 142,
+          "endLine": 142,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 338649,
+            "previousLine": 79893,
+            "nextLine": 1483,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 143,
+          "endLine": 143,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1483,
+            "previousLine": 338649,
+            "nextLine": 5597,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V809",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "Verifying that a pointer value is not NULL is not required. The 'if (vec != __null)' check can be removed.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 152,
+          "endLine": 152,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 372905,
+            "previousLine": 173729,
+            "nextLine": 140841,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'delete' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 153,
+          "endLine": 153,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 140841,
+            "previousLine": 372905,
+            "nextLine": -321700946,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'if' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 152,
+          "endLine": 152,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 372905,
+            "previousLine": 173729,
+            "nextLine": 140841,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'new' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 154,
+          "endLine": 154,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": -321700946,
+            "previousLine": 140841,
+            "nextLine": 113,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 158,
+          "endLine": 158,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 2720749,
+            "previousLine": 161001867,
+            "nextLine": 1483,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'for' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 157,
+          "endLine": 157,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 161001867,
+            "previousLine": 745769,
+            "nextLine": 2720749,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V668",
+      "cwe": 571,
+      "falseAlarm": false,
+      "level": 2,
+      "message": "There is no sense in testing the 'vec' pointer against null, as the memory was allocated using the 'new' operator. The exception will be generated in the case of memory allocation error.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 156,
+          "endLine": 156,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 745769,
+            "previousLine": 113,
+            "nextLine": 161001867,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-MEM52-CPP",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 159,
+          "endLine": 159,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1483,
+            "previousLine": 2720749,
+            "nextLine": 5599,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2513",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The function with the 'strlen' name should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 168,
+          "endLine": 168,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 9364661,
+            "previousLine": 123,
+            "nextLine": 5650469,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-0-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V809",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "Verifying that a pointer value is not NULL is not required. The 'if (vec != __null)' check can be removed.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 170,
+          "endLine": 170,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 372905,
+            "previousLine": 5650469,
+            "nextLine": 140841,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'delete' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 171,
+          "endLine": 171,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 140841,
+            "previousLine": 372905,
+            "nextLine": 735,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'if' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 170,
+          "endLine": 170,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 372905,
+            "previousLine": 5650469,
+            "nextLine": 140841,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'new' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 173,
+          "endLine": 173,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": -1865204827,
+            "previousLine": 735,
+            "nextLine": 438,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 181,
+          "endLine": 181,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1495727,
+            "previousLine": 12217,
+            "nextLine": 338905,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'if' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 181,
+          "endLine": 181,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1495727,
+            "previousLine": 12217,
+            "nextLine": 338905,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V668",
+      "cwe": 571,
+      "falseAlarm": false,
+      "level": 2,
+      "message": "There is no sense in testing the 'vec' pointer against null, as the memory was allocated using the 'new' operator. The exception will be generated in the case of memory allocation error.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 175,
+          "endLine": 175,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 745769,
+            "previousLine": 438,
+            "nextLine": 1248375,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-MEM52-CPP",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 193,
+          "endLine": 193,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1483,
+            "previousLine": 125,
+            "nextLine": 5599,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 195,
+          "endLine": 195,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1483,
+            "previousLine": 5599,
+            "nextLine": 5597,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 205,
+          "endLine": 205,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 47578495,
+            "previousLine": 644007517,
+            "nextLine": 176909,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'if' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 205,
+          "endLine": 205,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 47578495,
+            "previousLine": 644007517,
+            "nextLine": 176909,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'for' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 204,
+          "endLine": 204,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 644007517,
+            "previousLine": 123,
+            "nextLine": 47578495,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2009",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "Consider passing the 'V' argument as a reference to const.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 200,
+          "endLine": 200,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 319921888,
+            "previousLine": 0,
+            "nextLine": 1814573419,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2506",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "A function should have a single point of exit at the end.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 200,
+          "endLine": 200,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 319921888,
+            "previousLine": 0,
+            "nextLine": 1814573419,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 206,
+          "endLine": 206,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 207,
+          "endLine": 207,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 209,
+          "endLine": 209,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp"
+        }
+      ],
+      "sastId": "MISRA-CPP-6-6-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 218,
+          "endLine": 218,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1925317100,
+            "previousLine": 644007517,
+            "nextLine": 44089,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'for' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 217,
+          "endLine": 217,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 644007517,
+            "previousLine": 16471917,
+            "nextLine": 1925317100,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 220,
+          "endLine": 220,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1483,
+            "previousLine": 44089,
+            "nextLine": 5595,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'for' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 229,
+          "endLine": 229,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 644007517,
+            "previousLine": 16471917,
+            "nextLine": 1925363180,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'for' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 241,
+          "endLine": 241,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 644007517,
+            "previousLine": 16471917,
+            "nextLine": 1925334508,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 244,
+          "endLine": 244,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1483,
+            "previousLine": 44089,
+            "nextLine": 5595,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 252,
+          "endLine": 252,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 24297709,
+            "previousLine": 644007517,
+            "nextLine": 81599,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'for' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 251,
+          "endLine": 251,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 644007517,
+            "previousLine": 745769,
+            "nextLine": 24297709,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'if' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 254,
+          "endLine": 254,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 12037,
+            "previousLine": 81599,
+            "nextLine": 3881,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 256,
+          "endLine": 256,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 194296085,
+            "previousLine": 3881,
+            "nextLine": 48574057,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 267,
+          "endLine": 267,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 388504301,
+            "previousLine": 113,
+            "nextLine": 151493401,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 281,
+          "endLine": 281,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 20294549,
+            "previousLine": 80457,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V1064",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The 'k' operand of the modulo operation is less than the '8' operand. The result is always equal to the left operand.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 284,
+          "endLine": 284,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 12113,
+            "previousLine": 113,
+            "nextLine": 1245793,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2015",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'k' identifier declared in the inner scope hides the identifier declared in the outer scope.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 285,
+          "endLine": 285,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1245793,
+            "previousLine": 12113,
+            "nextLine": 48574041,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 262,
+          "endLine": 262,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp"
+        }
+      ],
+      "sastId": "CERT-DCL01-C",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 286,
+          "endLine": 286,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 48574041,
+            "previousLine": 1245793,
+            "nextLine": 48574057,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 287,
+          "endLine": 287,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 48574057,
+            "previousLine": 48574041,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 298,
+          "endLine": 298,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 388504301,
+            "previousLine": 113,
+            "nextLine": 18485,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'for' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 296,
+          "endLine": 296,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 644007517,
+            "previousLine": 23866089,
+            "nextLine": 113,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 306,
+          "endLine": 306,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 6072843,
+            "previousLine": 856386220,
+            "nextLine": 1348430,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 307,
+          "endLine": 307,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1348430,
+            "previousLine": 6072843,
+            "nextLine": 1958,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 312,
+          "endLine": 312,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": -1698380907,
+            "previousLine": 80521,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 323,
+          "endLine": 323,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1483,
+            "previousLine": 44143,
+            "nextLine": 5597,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V668",
+      "cwe": 571,
+      "falseAlarm": false,
+      "level": 2,
+      "message": "There is no sense in testing the 'str' pointer against null, as the memory was allocated using the 'new' operator. The exception will be generated in the case of memory allocation error.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 331,
+          "endLine": 331,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 738857,
+            "previousLine": -2111072507,
+            "nextLine": 4919,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-MEM52-CPP",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2506",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "A function should have a single point of exit at the end.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 327,
+          "endLine": 327,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 117724505,
+            "previousLine": 0,
+            "nextLine": 1491669,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 350,
+          "endLine": 350,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 352,
+          "endLine": 352,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp"
+        }
+      ],
+      "sastId": "MISRA-CPP-6-6-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 359,
+          "endLine": 359,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 307442797,
+            "previousLine": 322003821,
+            "nextLine": 168785,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2506",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "A function should have a single point of exit at the end.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 355,
+          "endLine": 355,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 40391305,
+            "previousLine": 0,
+            "nextLine": 745769,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 365,
+          "endLine": 365,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 367,
+          "endLine": 367,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp"
+        }
+      ],
+      "sastId": "MISRA-CPP-6-6-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 385,
+          "endLine": 385,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1483,
+            "previousLine": 9737,
+            "nextLine": 5597,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 398,
+          "endLine": 398,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 539,
+            "previousLine": 7545,
+            "nextLine": 6489,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'if' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 396,
+          "endLine": 396,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 49125,
+            "previousLine": 321279,
+            "nextLine": 7545,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 400,
+          "endLine": 400,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1483,
+            "previousLine": 6489,
+            "nextLine": 5597,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'if' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 410,
+          "endLine": 410,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 10507803,
+            "previousLine": 321279,
+            "nextLine": 211,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 425,
+          "endLine": 425,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 539,
+            "previousLine": 165,
+            "nextLine": 167,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'if' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 423,
+          "endLine": 423,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 23571773,
+            "previousLine": 1279039,
+            "nextLine": 165,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V591",
+      "cwe": 393,
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Non-void function should return a value.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 429,
+          "endLine": 429,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 125,
+            "previousLine": 5597,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-MSC52-CPP",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2542",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Function with a non-void return type should return a value from all exit paths.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 429,
+          "endLine": 429,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 125,
+            "previousLine": 5597,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-8-4-3",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2009",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "Consider passing the 'v' argument as a reference to const.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 418,
+          "endLine": 418,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 31864065,
+            "previousLine": 0,
+            "nextLine": 1766464040,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 444,
+          "endLine": 444,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 539,
+            "previousLine": 35657,
+            "nextLine": 35661,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'if' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 441,
+          "endLine": 441,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 185848,
+            "previousLine": 123,
+            "nextLine": 5085,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2009",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "Consider passing the 'V' argument as a reference to const.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 431,
+          "endLine": 431,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 641801192,
+            "previousLine": 0,
+            "nextLine": 5956309,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'new' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 471,
+          "endLine": 471,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 616992156,
+            "previousLine": 16689,
+            "nextLine": 2955654,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V755",
+      "cwe": 123,
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Copying potentially tainted data from 'std::cin' to buffer 'str'. Buffer overflow is possible.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 476,
+          "endLine": 476,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 19127,
+            "previousLine": 36292039,
+            "nextLine": 187825,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-STR31-C",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'delete' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 480,
+          "endLine": 480,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 140903,
+            "previousLine": 709591333,
+            "nextLine": 1483,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V668",
+      "cwe": 571,
+      "falseAlarm": false,
+      "level": 2,
+      "message": "There is no sense in testing the 'str' pointer against null, as the memory was allocated using the 'new' operator. The exception will be generated in the case of memory allocation error.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 472,
+          "endLine": 472,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 2955654,
+            "previousLine": 616992156,
+            "nextLine": 113,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-MEM52-CPP",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2507",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 481,
+          "endLine": 481,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 1483,
+            "previousLine": 140903,
+            "nextLine": 5599,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V1077",
+      "cwe": 457,
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'X' constructor contains potentially uninitialized members. Inspect the following: ptr, index.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 377,
+          "endLine": 377,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 312108125,
+            "previousLine": 0,
+            "nextLine": 113,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 383,
+          "endLine": 383,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 384,
+          "endLine": 384,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp"
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V1077",
+      "cwe": 457,
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'BBV' constructor contains potentially uninitialized members. Inspect the following: vec, len, size.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 20,
+          "endLine": 20,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 59688409,
+            "previousLine": 0,
+            "nextLine": 370393,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 22,
+          "endLine": 22,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 27,
+          "endLine": 27,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 28,
+          "endLine": 28,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp"
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V1077",
+      "cwe": 457,
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'BBV' constructor contains potentially uninitialized members. Inspect the following: len, size, vec.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 37,
+          "endLine": 37,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 955189809,
+            "previousLine": 0,
+            "nextLine": 1477845,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 40,
+          "endLine": 40,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 42,
+          "endLine": 42,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 43,
+          "endLine": 43,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp"
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V1077",
+      "cwe": 457,
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'BBV' constructor contains potentially uninitialized members. Inspect the following: size, len, vec.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 70,
+          "endLine": 70,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 3728353,
+            "previousLine": 0,
+            "nextLine": 190603201,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 73,
+          "endLine": 73,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 74,
+          "endLine": 74,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 75,
+          "endLine": 75,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp"
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2575",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The global namespace should only contain 'main', namespace declarations and extern 'C' declaration.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 431,
+          "endLine": 431,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": 641801192,
+            "previousLine": 0,
+            "nextLine": 5956309,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-7-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2575",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The global namespace should only contain 'main', namespace declarations and extern 'C' declaration.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 460,
+          "endLine": 460,
+          "file": "development_of_information_security_tools_lab_2/BBV/src/BBV.cpp",
+          "navigation": {
+            "currentLine": -1103684565,
+            "previousLine": 125,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-7-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2513",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The function with the 'strlen' name should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 17,
+          "endLine": 17,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp",
+          "navigation": {
+            "currentLine": -1813713431,
+            "previousLine": 440,
+            "nextLine": 3032393,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-0-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2513",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The function with the 'strlen' name should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 28,
+          "endLine": 28,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp",
+          "navigation": {
+            "currentLine": 695061433,
+            "previousLine": 93177,
+            "nextLine": 189657,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-0-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 34,
+          "endLine": 34,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp",
+          "navigation": {
+            "currentLine": 47596493,
+            "previousLine": 338393,
+            "nextLine": 35237,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 36,
+          "endLine": 36,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp",
+          "navigation": {
+            "currentLine": 1583760173,
+            "previousLine": 35237,
+            "nextLine": 42661,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2516",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The 'if' ... 'else if' construct should be terminated with an 'else' statement.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 36,
+          "endLine": 36,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp",
+          "navigation": {
+            "currentLine": 1583760173,
+            "previousLine": 35237,
+            "nextLine": 42661,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-6-4-2",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V818",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "It is more efficient to use an initialization list 'vec(vec_in), dnc(dnc_in)' rather than an assignment operator.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 45,
+          "endLine": 45,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp",
+          "navigation": {
+            "currentLine": 1058192002,
+            "previousLine": 0,
+            "nextLine": 97067,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 46,
+          "endLine": 46,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 47,
+          "endLine": 47,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp"
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2537",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Functions should not have unused parameters. Consider inspecting the parameter: 'dnc'.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 50,
+          "endLine": 50,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp",
+          "navigation": {
+            "currentLine": -1177035016,
+            "previousLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-0-1-11",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2537",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Functions should not have unused parameters. Consider inspecting the parameter: 'vec'.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 50,
+          "endLine": 50,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp",
+          "navigation": {
+            "currentLine": -1177035016,
+            "previousLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-0-1-11",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2009",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "Consider passing the 'ibv' argument as a reference to const.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 52,
+          "endLine": 52,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp",
+          "navigation": {
+            "currentLine": -1933334361,
+            "previousLine": 0,
+            "nextLine": -789433661,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2506",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "A function should have a single point of exit at the end.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 52,
+          "endLine": 52,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp",
+          "navigation": {
+            "currentLine": -1933334361,
+            "previousLine": 0,
+            "nextLine": -789433661,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 54,
+          "endLine": 54,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 57,
+          "endLine": 57,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp"
+        }
+      ],
+      "sastId": "MISRA-CPP-6-6-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2009",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "Consider passing the 'ibv' argument as a reference to const.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 60,
+          "endLine": 60,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp",
+          "navigation": {
+            "currentLine": -1929140057,
+            "previousLine": 0,
+            "nextLine": -859192637,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2506",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "A function should have a single point of exit at the end.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 60,
+          "endLine": 60,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp",
+          "navigation": {
+            "currentLine": -1929140057,
+            "previousLine": 0,
+            "nextLine": -859192637,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 62,
+          "endLine": 62,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 65,
+          "endLine": 65,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp"
+        }
+      ],
+      "sastId": "MISRA-CPP-6-6-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2009",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "Consider passing the 'ibv' argument as a reference to const.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 86,
+          "endLine": 86,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp",
+          "navigation": {
+            "currentLine": 265529514,
+            "previousLine": 0,
+            "nextLine": 527202653,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V820",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "The 'zero' variable is not used after copying. Copying can be replaced with move/swap for optimization.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 91,
+          "endLine": 91,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp",
+          "navigation": {
+            "currentLine": 4153173,
+            "previousLine": 1015893,
+            "nextLine": 10702917,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2506",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "A function should have a single point of exit at the end.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 86,
+          "endLine": 86,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp",
+          "navigation": {
+            "currentLine": 265529514,
+            "previousLine": 0,
+            "nextLine": 527202653,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 106,
+          "endLine": 106,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 109,
+          "endLine": 109,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp"
+        }
+      ],
+      "sastId": "MISRA-CPP-6-6-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2009",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "Consider passing the 'ibv' argument as a reference to const.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 112,
+          "endLine": 112,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp",
+          "navigation": {
+            "currentLine": 266296168,
+            "previousLine": 0,
+            "nextLine": 527202653,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2506",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "A function should have a single point of exit at the end.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 112,
+          "endLine": 112,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp",
+          "navigation": {
+            "currentLine": 266296168,
+            "previousLine": 0,
+            "nextLine": 527202653,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 132,
+          "endLine": 132,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 135,
+          "endLine": 135,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp"
+        }
+      ],
+      "sastId": "MISRA-CPP-6-6-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2506",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "A function should have a single point of exit at the end.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 138,
+          "endLine": 138,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp",
+          "navigation": {
+            "currentLine": -1397419569,
+            "previousLine": 0,
+            "nextLine": 1823635740,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 144,
+          "endLine": 144,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 148,
+          "endLine": 148,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 151,
+          "endLine": 151,
+          "file": "development_of_information_security_tools_lab_2/bool_interval/src/boolinterval.cpp"
+        }
+      ],
+      "sastId": "MISRA-CPP-6-6-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2563",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 26,
+          "endLine": 26,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/min_dont_care_branching_strategy.cpp",
+          "navigation": {
+            "currentLine": -965357775,
+            "previousLine": 363917918,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-5-0-15",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2506",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "A function should have a single point of exit at the end.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 10,
+          "endLine": 10,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/min_dont_care_branching_strategy.cpp",
+          "navigation": {
+            "currentLine": 743415250,
+            "previousLine": 0,
+            "nextLine": 724517209,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 22,
+          "endLine": 22,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/min_dont_care_branching_strategy.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 50,
+          "endLine": 50,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/min_dont_care_branching_strategy.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 55,
+          "endLine": 55,
+          "file": "development_of_information_security_tools_lab_2/bool_equation/src/min_dont_care_branching_strategy.cpp"
+        }
+      ],
+      "sastId": "MISRA-CPP-6-6-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2506",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "A function should have a single point of exit at the end.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 23,
+          "endLine": 23,
+          "file": "development_of_information_security_tools_lab_2/main.cpp",
+          "navigation": {
+            "currentLine": 1145260917,
+            "previousLine": 0,
+            "nextLine": -2140488941,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 28,
+          "endLine": 28,
+          "file": "development_of_information_security_tools_lab_2/main.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 32,
+          "endLine": 32,
+          "file": "development_of_information_security_tools_lab_2/main.cpp"
+        }
+      ],
+      "sastId": "MISRA-CPP-6-6-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'delete' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 61,
+          "endLine": 61,
+          "file": "development_of_information_security_tools_lab_2/main.cpp",
+          "navigation": {
+            "currentLine": 1121357,
+            "previousLine": 0,
+            "nextLine": 70105,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'delete' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 62,
+          "endLine": 62,
+          "file": "development_of_information_security_tools_lab_2/main.cpp",
+          "navigation": {
+            "currentLine": 70105,
+            "previousLine": 1121357,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2506",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The 'return' statement should be the last statement of a function.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 41,
+          "endLine": 41,
+          "file": "development_of_information_security_tools_lab_2/main.cpp",
+          "navigation": {
+            "currentLine": 1671022652,
+            "previousLine": 0,
+            "nextLine": 11860289,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 43,
+          "endLine": 43,
+          "file": "development_of_information_security_tools_lab_2/main.cpp"
+        }
+      ],
+      "sastId": "MISRA-CPP-6-6-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2547",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The return value of non-void function 'set_new_handler' should be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 67,
+          "endLine": 67,
+          "file": "development_of_information_security_tools_lab_2/main.cpp",
+          "navigation": {
+            "currentLine": -529673410,
+            "previousLine": -1515528703,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-0-1-7",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2547",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The return value of non-void function 'erase' should be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 101,
+          "endLine": 101,
+          "file": "development_of_information_security_tools_lab_2/main.cpp",
+          "navigation": {
+            "currentLine": -1639908075,
+            "previousLine": -776208964,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-0-1-7",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'new' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 109,
+          "endLine": 109,
+          "file": "development_of_information_security_tools_lab_2/main.cpp",
+          "navigation": {
+            "currentLine": 1608173202,
+            "previousLine": 542409607,
+            "nextLine": -1831782396,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'new' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 118,
+          "endLine": 118,
+          "file": "development_of_information_security_tools_lab_2/main.cpp",
+          "navigation": {
+            "currentLine": 2107272130,
+            "previousLine": 1141357605,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'new' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 138,
+          "endLine": 138,
+          "file": "development_of_information_security_tools_lab_2/main.cpp",
+          "navigation": {
+            "currentLine": -1343405938,
+            "previousLine": 217,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'new' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 227,
+          "endLine": 227,
+          "file": "development_of_information_security_tools_lab_2/main.cpp",
+          "navigation": {
+            "currentLine": -130033106,
+            "previousLine": 0,
+            "nextLine": -398468566,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'new' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 228,
+          "endLine": 228,
+          "file": "development_of_information_security_tools_lab_2/main.cpp",
+          "navigation": {
+            "currentLine": -398468566,
+            "previousLine": -130033106,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'delete' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 258,
+          "endLine": 258,
+          "file": "development_of_information_security_tools_lab_2/main.cpp",
+          "navigation": {
+            "currentLine": 281117,
+            "previousLine": -1718979731,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'delete' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 261,
+          "endLine": 261,
+          "file": "development_of_information_security_tools_lab_2/main.cpp",
+          "navigation": {
+            "currentLine": 141159,
+            "previousLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-18-4-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2506",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "A function should have a single point of exit at the end.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 66,
+          "endLine": 66,
+          "file": "development_of_information_security_tools_lab_2/main.cpp",
+          "navigation": {
+            "currentLine": -1515528703,
+            "previousLine": 0,
+            "nextLine": -529673410,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 72,
+          "endLine": 72,
+          "file": "development_of_information_security_tools_lab_2/main.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 86,
+          "endLine": 86,
+          "file": "development_of_information_security_tools_lab_2/main.cpp"
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 267,
+          "endLine": 267,
+          "file": "development_of_information_security_tools_lab_2/main.cpp"
+        }
+      ],
+      "sastId": "MISRA-CPP-6-6-5",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2575",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The global namespace should only contain 'main', namespace declarations and extern 'C' declaration.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 41,
+          "endLine": 41,
+          "file": "development_of_information_security_tools_lab_2/main.cpp",
+          "navigation": {
+            "currentLine": 1671022652,
+            "previousLine": 0,
+            "nextLine": 11860289,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-7-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2575",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The global namespace should only contain 'main', namespace declarations and extern 'C' declaration.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 18,
+          "endLine": 18,
+          "file": "development_of_information_security_tools_lab_2/main.cpp",
+          "navigation": {
+            "currentLine": -1240882367,
+            "previousLine": 0,
+            "nextLine": -1660562625,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-7-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2575",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The global namespace should only contain 'main', namespace declarations and extern 'C' declaration.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 35,
+          "endLine": 35,
+          "file": "development_of_information_security_tools_lab_2/main.cpp",
+          "navigation": {
+            "currentLine": -1166776175,
+            "previousLine": 0,
+            "nextLine": -1201284424,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-7-3-1",
+      "favorite": false,
+      "projects": []
+    },
+    {
+      "code": "V2575",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The global namespace should only contain 'main', namespace declarations and extern 'C' declaration.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 23,
+          "endLine": 23,
+          "file": "development_of_information_security_tools_lab_2/main.cpp",
+          "navigation": {
+            "currentLine": 1145260917,
+            "previousLine": 0,
+            "nextLine": -2140488941,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-7-3-1",
+      "favorite": false,
+      "projects": []
+    }
+  ],
+  "version": 2
+}
