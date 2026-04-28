@@ -3,8 +3,6 @@
 #include <cstring>
 #include <iostream>
 
-IMPLEMENT_ALLOCATOR(BoolInterval, 0, 0)
-
 BoolInterval::BoolInterval(size_t len) {
   vec = BBV(len);
   dnc = BBV(len);

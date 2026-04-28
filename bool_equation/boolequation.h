@@ -2,7 +2,6 @@
 #define BOOLEQUATION_H
 
 #include "boolinterval.h"
-#include "Allocator.h"
 #include <cstddef>
 
 class BranchingStrategy; // Forward declaration of BranchingStrategy
@@ -27,7 +26,6 @@ public:
 	void Simplify(int ixCol, char value);
 	int ChooseColForBranching();
 	int ChooseColForBranching(const BranchingStrategy &strategy);
-	DECLARE_ALLOCATOR
 };
 
 #endif // BOOLEQUATION_H

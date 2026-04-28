@@ -2,7 +2,6 @@
 #define BOOLINTERVAL_H
 
 #include "BBV.h"
-#include "Allocator.h"
 
 class BoolInterval
 {
@@ -34,8 +33,6 @@ public:
 	char getValue(int ix);//Получить i ое значение компоненты интервала
 
 	void setValue(char value, int ix); //Установить iое значение интервала
-
-	DECLARE_ALLOCATOR
 
 };
 

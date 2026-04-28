@@ -3,9 +3,6 @@
 #include <cstring>
 #include <iostream>
 
-IMPLEMENT_ALLOCATOR(X, 0, 0)
-IMPLEMENT_ALLOCATOR(BBV, 0, 0)
-
 BBV::~BBV() {
   if (vec != NULL)
     delete[] vec;
