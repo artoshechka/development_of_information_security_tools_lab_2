@@ -6,26 +6,29 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-include(FetchContent)
+# Allocator is expected to be available locally in the repository.
+set(ALLOCATOR_DIR "" CACHE PATH "Path to local Allocator sources")
 
-# Auto-download Allocator from upstream repository during CMake configure.
-FetchContent_Declare(
-	allocator_upstream
-	GIT_REPOSITORY https://github.com/endurodave/Allocator.git
-	GIT_TAG master
-)
+if(NOT ALLOCATOR_DIR)
+	if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/Allocator/Allocator.cpp")
+		set(ALLOCATOR_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Allocator")
+	elseif(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/allocator/Allocator.cpp")
+		set(ALLOCATOR_DIR "${CMAKE_CURRENT_SOURCE_DIR}/allocator")
+	endif()
+endif()
 
-FetchContent_GetProperties(allocator_upstream)
-if(NOT allocator_upstream_POPULATED)
-	FetchContent_Populate(allocator_upstream)
+if(NOT EXISTS "${ALLOCATOR_DIR}/Allocator.cpp")
+	message(FATAL_ERROR
+		"Allocator source was not found. Put Allocator near project modules and set -DALLOCATOR_DIR=/path/to/Allocator"
+	)
 endif()
 
 add_library(lab2_allocator STATIC
-	${allocator_upstream_SOURCE_DIR}/Allocator.cpp
+	${ALLOCATOR_DIR}/Allocator.cpp
 )
 
 target_include_directories(lab2_allocator PUBLIC
-	${allocator_upstream_SOURCE_DIR}
+	${ALLOCATOR_DIR}
 )
 
 add_subdirectory(BBV)

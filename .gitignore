@@ -2,3 +2,4 @@
 build/
 build-coverage/
 .DS_Store
+Allocator/
