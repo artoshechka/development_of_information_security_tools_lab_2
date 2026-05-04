@@ -2,7 +2,6 @@
 #define MIN_DONT_CARE_BRANCHING_STRATEGY_H
 
 #include "branching_strategy.h"
-#include "Allocator.h"
 
 ///@brief Стратегия выбора свободного столбца с минимальным числом символов '-'.
 class MinDontCareBranchingStrategy : public BranchingStrategy
@@ -12,8 +11,6 @@ public:
 	///@param equation Текущее состояние булева уравнения.
 	///@return Индекс столбца с нуля или -1, если свободных столбцов нет.
 	int ChooseColumn(BoolEquation &equation) const;
-
-	DECLARE_ALLOCATOR
 };
 
 #endif // MIN_DONT_CARE_BRANCHING_STRATEGY_H

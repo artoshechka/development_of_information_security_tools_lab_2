@@ -2,7 +2,6 @@
 #define BBV_H
 
 #include <iostream>
-#include "Allocator.h"
 using namespace std;
 
 typedef unsigned char byteDefinition;
@@ -17,8 +16,6 @@ public:
     X operator=(int k);//перегрузка оператора присвоения
     operator int();//перегрузка типа
     X operator=(X& v);
-
-    DECLARE_ALLOCATOR
 };
 
 
@@ -52,8 +49,6 @@ public:
     int getSize();//метод для получения размера вектора
     friend ostream & operator << (ostream &r, BBV& V);
     friend istream & operator >> (istream &r, BBV& V);
-
-    DECLARE_ALLOCATOR
 };
 
 
