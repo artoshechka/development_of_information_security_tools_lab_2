@@ -17,8 +17,14 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y cmake g++ make valgrind
 
+      - name: Clone Allocator dependency
+        run: |
+          if [ ! -d "Allocator" ]; then
+            git clone --depth 1 https://github.com/endurodave/Allocator.git Allocator
+          fi
+
       - name: Configure CMake
-        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DALLOCATOR_DIR=${{ github.workspace }}/Allocator
 
       - name: Build
         run: cmake --build build -j$(nproc)
