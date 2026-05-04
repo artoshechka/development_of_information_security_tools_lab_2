@@ -17,7 +17,6 @@
 #include <stack>
 #include <stdexcept>
 #include <string>
-#include <tests.h>
 #include <vector>
 
 static void out_of_memory()
@@ -258,7 +257,6 @@ int main(int argc, char *argv[])
     std::set_new_handler(out_of_memory);
 
     bool runBench = false;
-    bool runTest = false;
     std::string inputFile;
 
     for (int i = 1; i < argc; i++)
@@ -267,10 +265,6 @@ int main(int argc, char *argv[])
         if (arg == "--bench")
         {
             runBench = true;
-        }
-        else if (arg == "--test")
-        {
-            runTest = true;
         }
         else if (arg[0] != '-')
         {
@@ -283,17 +277,10 @@ int main(int argc, char *argv[])
         RunAllocatorBenchmarks();
     }
 
-    if (runTest)
-    {
-        RunMemoryTests();
-    }
-
-    if (!runBench && !runTest && inputFile.empty())
+    if (!runBench && inputFile.empty())
     {
         std::cout << "Usage: " << argv[0] << " <input_file> [strategy_name]\n";
         std::cout << "   or: " << argv[0] << " --bench\n";
-        std::cout << "   or: " << argv[0] << " --test\n";
-        std::cout << "   or: " << argv[0] << " --bench --test <input_file> [strategy_name]\n";
         PrintAvailableStrategies();
         return 1;
     }
