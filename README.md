@@ -88,7 +88,6 @@ class BoolEquation {
 	+BBV mask
 	+BoolEquation(BoolInterval** cnf, BoolInterval* root, int cnfSize, int count, BBV mask)
 	+BoolEquation(BoolEquation& equation)
-	+~BoolEquation()
 	+CheckRules() int
 	+Rule1Row1(BoolInterval* interval) bool
 	+Rule2RowNull(BoolInterval* interval) bool
@@ -96,7 +95,6 @@ class BoolEquation {
 	+Rule4Col0(BBV vector) bool
 	+Rule5Col1(BBV vector) bool
 	+Simplify(int ixCol, char value) void
-	+ChooseColForBranching() int
 	+ChooseColForBranching(const BranchingStrategy& strategy) int
 }
 class BranchingStrategy {

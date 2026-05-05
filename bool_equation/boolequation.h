@@ -2,9 +2,8 @@
 #define BOOLEQUATION_H
 
 #include "boolinterval.h"
-#include <cstddef>
 
-class BranchingStrategy; // Forward declaration of BranchingStrategy
+class BranchingStrategy;
 
 class BoolEquation
 {
@@ -16,7 +15,6 @@ public:
 	BBV mask; //маска для столбцов
 	BoolEquation(BoolInterval **cnf, BoolInterval *root, int cnfSize, int count, BBV mask);
 	BoolEquation(BoolEquation &equation);
-	~BoolEquation();
 	int CheckRules();
 	bool Rule1Row1(BoolInterval *interval);
 	bool Rule2RowNull(BoolInterval *interval);
@@ -24,7 +22,6 @@ public:
 	bool Rule4Col0(BBV vector);
 	bool Rule5Col1(BBV vector);
 	void Simplify(int ixCol, char value);
-	int ChooseColForBranching();
 	int ChooseColForBranching(const BranchingStrategy &strategy);
 };
 
