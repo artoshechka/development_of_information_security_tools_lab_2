@@ -31,14 +31,14 @@ jobs:
 
       - name: Run Valgrind on all test cases and strategies
         run: |
-          mkdir -p build/valgrind-reports
+          mkdir -p scan_reports/valgrind
           STRATEGIES=("min-dont-care" "first-free")
           FAILED=0
           
           for pla_file in SatExamples/*.pla; do
             filename=$(basename "$pla_file")
             for strategy in "${STRATEGIES[@]}"; do
-              report_file="build/valgrind-reports/${filename%.*}_${strategy}.json"
+              report_file="scan_reports/valgrind/${filename%.*}_${strategy}.json"
               echo "Testing: $pla_file with strategy $strategy"
               
               valgrind \
@@ -63,39 +63,40 @@ jobs:
           
           # Create array of all reports
           jq -s '{total_tests: length, timestamp: now, reports: .}' \
-            build/valgrind-reports/*.json > build/valgrind-combined.json || echo '{"total_tests": 0, "reports": []}' > build/valgrind-combined.json
+            scan_reports/valgrind/*.json > scan_reports/valgrind-combined.json || echo '{"total_tests": 0, "reports": []}' > scan_reports/valgrind-combined.json
           
           # Generate summary markdown
-          echo "# Valgrind Test Results" > build/valgrind-summary.md
-          echo "" >> build/valgrind-summary.md
-          echo "## Test Coverage" >> build/valgrind-summary.md
-          echo "Total test cases: $(find build/valgrind-reports -name '*.json' | wc -l)" >> build/valgrind-summary.md
-          echo "" >> build/valgrind-summary.md
-          echo "## Individual Reports" >> build/valgrind-summary.md
-          for report in build/valgrind-reports/*.json; do
+          echo "# Valgrind Test Results" > scan_reports/VALGRIND_REPORT.md
+          echo "" >> scan_reports/VALGRIND_REPORT.md
+          echo "**Generated:** $(date -u)" >> scan_reports/VALGRIND_REPORT.md
+          echo "" >> scan_reports/VALGRIND_REPORT.md
+          echo "## Test Coverage" >> scan_reports/VALGRIND_REPORT.md
+          echo "Total test cases: $(find scan_reports/valgrind -name '*.json' | wc -l)" >> scan_reports/VALGRIND_REPORT.md
+          echo "" >> scan_reports/VALGRIND_REPORT.md
+          echo "## Individual Reports" >> scan_reports/VALGRIND_REPORT.md
+          for report in scan_reports/valgrind/*.json; do
             if [ -f "$report" ]; then
               name=$(basename "$report")
-              echo "- [$name]($name)" >> build/valgrind-summary.md
+              echo "- [valgrind/$name](valgrind/$name)" >> scan_reports/VALGRIND_REPORT.md
             fi
           done
-          echo "" >> build/valgrind-summary.md
-          echo "## Combined Report" >> build/valgrind-summary.md
-          echo "- [valgrind-combined.json](valgrind-combined.json)" >> build/valgrind-summary.md
+          echo "" >> scan_reports/VALGRIND_REPORT.md
+          echo "## Combined Report" >> scan_reports/VALGRIND_REPORT.md
+          echo "- [valgrind-combined.json](valgrind-combined.json)" >> scan_reports/VALGRIND_REPORT.md
 
-      - name: Upload Valgrind reports and combined JSON
+      - name: Commit Valgrind results to repository
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scan_reports/valgrind/ scan_reports/valgrind-combined.json scan_reports/VALGRIND_REPORT.md
+          git commit -m "ci: update valgrind analysis results" || echo "No changes to commit"
+          git push || echo "Push failed or no changes"
+
+      - name: Upload Valgrind reports to artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: valgrind-reports
-          path: |
-            build/valgrind-reports/
-            build/valgrind-combined.json
-          retention-days: 30
-
-      - name: Upload Valgrind summary
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: valgrind-summary
-          path: build/valgrind-summary.md
+          path: scan_reports/
           retention-days: 30
