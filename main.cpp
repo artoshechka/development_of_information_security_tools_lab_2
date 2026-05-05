@@ -299,7 +299,25 @@ int main(int argc, char *argv[])
             return 1;
         }
 
-        SolveBooleanEquation(inputFile, *branchingStrategy);
+        try
+        {
+            SolveBooleanEquation(inputFile, *branchingStrategy);
+        }
+        catch (const int &e)
+        {
+            std::cerr << "Error code: " << e << "\n";
+            return 1;
+        }
+        catch (const std::exception &e)
+        {
+            std::cerr << "Exception: " << e.what() << "\n";
+            return 1;
+        }
+        catch (...)
+        {
+            std::cerr << "Unknown exception occurred\n";
+            return 1;
+        }
     }
 
     return 0;
