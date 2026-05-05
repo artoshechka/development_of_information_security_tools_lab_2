@@ -258,28 +258,28 @@ int main(int argc, char *argv[])
 
     bool runBench = false;
     std::string inputFile;
+    std::string strategyName = "min-dont-care";
 
     for (int i = 1; i < argc; i++)
     {
         std::string arg = argv[i];
+        
         if (arg == "--bench")
-        {
             runBench = true;
-        }
-        else if (arg[0] != '-')
-        {
+        else if (arg.substr(0, 11) == "--strategy=")
+            strategyName = arg.substr(11);
+        else if ((arg == "-s" || arg == "--strategy") && i + 1 < argc)
+            strategyName = argv[++i];
+        else if (arg[0] != '-' && inputFile.empty())
             inputFile = arg;
-        }
     }
 
     if (runBench)
-    {
         RunAllocatorBenchmarks();
-    }
 
     if (!runBench && inputFile.empty())
     {
-        std::cout << "Usage: " << argv[0] << " <input_file> [strategy_name]\n";
+        std::cout << "Usage: " << argv[0] << " <input_file> [--strategy=name|-s name]\n";
         std::cout << "   or: " << argv[0] << " --bench\n";
         PrintAvailableStrategies();
         return 1;
@@ -287,17 +287,6 @@ int main(int argc, char *argv[])
 
     if (!inputFile.empty())
     {
-        std::string strategyName = "min-dont-care";
-
-        for (int i = 1; i < argc; i++)
-        {
-            if (argv[i] == inputFile && i + 1 < argc && argv[i + 1][0] != '-')
-            {
-                strategyName = argv[i + 1];
-                break;
-            }
-        }
-
         std::shared_ptr<BranchingStrategy> branchingStrategy;
         try
         {

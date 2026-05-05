@@ -105,7 +105,7 @@ class BranchingStrategy {
 	+ChooseColumn(BoolEquation& equation) int
 }
 class BranchingStrategyFactory {
-	+CreateByName(const string& name) unique_ptr~BranchingStrategy~
+	+GetStrategy(const string& name) shared_ptr~BranchingStrategy~
 }
 class FirstFreeColumnBranchingStrategy {
 	+ChooseColumn(BoolEquation& equation) int
@@ -237,7 +237,14 @@ cmake .. && cmake --build .
 ```
 Запустите программу:
 ```powershell
-.\development_of_information_security_tools_lab_2.exe <PATH> min-dont-care
+.\development_of_information_security_tools_lab_2.exe <input_file> [--strategy=name|-s name]
+```
+
+Примеры:
+```powershell
+.\development_of_information_security_tools_lab_2.exe .\SatExamples\sat_ex_1.pla
+.\development_of_information_security_tools_lab_2.exe .\SatExamples\sat_ex_1.pla --strategy=first-free
+.\development_of_information_security_tools_lab_2.exe .\SatExamples\sat_ex_1.pla -s min-dont-care
 ```
 
 
@@ -259,18 +266,14 @@ cmake --build .
 
 Запустите программу:
 ```bash
-./development_of_information_security_tools_lab_2 <PATH> min-dont-care
+./development_of_information_security_tools_lab_2 <input_file> [--strategy=name|-s name]
 ```
 
-Поддерживаемые стратегии ветвления:
-- `min-dont-care` или `min`
-- `first-free` или `first`
-
-Флаг `--bench` запускает бенчмарк аллокатора и может использоваться вместе с файлом входных данных:
-
+Примеры:
 ```bash
-./development_of_information_security_tools_lab_2 --bench
-./development_of_information_security_tools_lab_2 --bench <PATH> first-free
+./development_of_information_security_tools_lab_2 SatExamples/sat_ex_1.pla
+./development_of_information_security_tools_lab_2 SatExamples/sat_ex_1.pla --strategy=min-dont-care
+./development_of_information_security_tools_lab_2 SatExamples/sat_ex_2.pla -s first-free
 ```
 </details>
 
@@ -280,24 +283,15 @@ cmake --build .
 #### Примеры использования
 
 ```bash
-# Решить SAT-задачу со стратегией min-dont-care
-./program ../SatExamples/sat_ex_1.pla
-
-# Решить со стратегией first-free
-./program ../SatExamples/sat_ex_2.pla first
-
-# Запустить бенчмарки аллокатора
-./program --bench
-
-# Запустить бенчмарки и решение
-./program --bench ../SatExamples/sat_ex_1.pla min-dont-care
+./development_of_information_security_tools_lab_2 SatExamples/sat_ex_1.pla
+./development_of_information_security_tools_lab_2 SatExamples/sat_ex_1.pla --strategy=first-free
+./development_of_information_security_tools_lab_2 SatExamples/sat_ex_2.pla -s min-dont-care
+./development_of_information_security_tools_lab_2 --bench
 ```
 
-#### Описание режимов
-
-**Решение уравнения (`<input_file>`)**
-- Читает файл в формате `.pla` с булевыми интервалами
-- Применяет алгоритм DPLL с выбранной стратегией ветвления
+**Поддерживаемые стратегии ветвления:**
+- `min-dont-care` — выбирает столбец с минимальным числом символов `-` (по умолчанию)
+- `first-free` — выбирает первый свободный столбец
 - Выводит найденное решение или сообщение об отсутствии решения
 
 **Бенчмарки аллокатора (`--bench`)**
