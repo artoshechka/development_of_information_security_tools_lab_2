@@ -12,8 +12,8 @@
   <line>Command: ./build/development_of_information_security_tools_lab_2 SatExamples/Sat_ex30_3.pla --strategy=min-dont-care</line>
 </preamble>
 
-<pid>3320</pid>
-<ppid>3111</ppid>
+<pid>3115</pid>
+<ppid>3113</ppid>
 <tool>memcheck</tool>
 
 <args>
@@ -35,7 +35,7 @@
 
 <status>
   <state>RUNNING</state>
-  <time>00:00:00:00.031 </time>
+  <time>00:00:00:00.030 </time>
 </status>
 
 <error>
