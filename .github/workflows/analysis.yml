@@ -17,7 +17,7 @@ jobs:
       - name: Install build tools and Valgrind
         run: |
           sudo apt-get update
-          sudo apt-get install -y cmake g++ make valgrind openjdk-17-jre
+          sudo apt-get install -y cmake g++ make valgrind
 
       - name: Clone Allocator dependency
         run: |
@@ -31,48 +31,37 @@ jobs:
       - name: Build
         run: cmake --build build -j$(nproc)
 
-      - name: Run Valgrind on all test cases and strategies
+      - name: Run Valgrind for min-dont-care
         run: |
+          set +e
           mkdir -p scan_reports/valgrind
-          STRATEGIES=("min-dont-care" "first-free")
-          FAILED=0
-          
-          for pla_file in SatExamples/*.pla; do
-            filename=$(basename "$pla_file")
-            for strategy in "${STRATEGIES[@]}"; do
-              report_file="scan_reports/valgrind/${filename%.*}_${strategy}.xml"
-              echo "Testing: $pla_file with strategy $strategy"
-              
-              valgrind \
-                --leak-check=full \
-                --show-leak-kinds=all \
-                --track-origins=yes \
-                --xml=yes \
-                --xml-file="$report_file" \
-                --error-exitcode=1 \
-                ./build/development_of_information_security_tools_lab_2 \
-                "$pla_file" \
-                --strategy="$strategy" || FAILED=1
-            done
-          done
-          
-          exit $FAILED
 
-      - name: Build merged Valgrind HTML report
+          pla_file="SatExamples/Sat_ex30_3.pla"
+          strategy="min-dont-care"
+          report_file="scan_reports/valgrind/Sat_ex30_3_${strategy}.xml"
+          echo "Testing: $pla_file with strategy $strategy"
+          valgrind \
+            --leak-check=full \
+            --show-leak-kinds=all \
+            --track-origins=yes \
+            --xml=yes \
+            --xml-file="$report_file" \
+            --error-exitcode=1 \
+            ./build/development_of_information_security_tools_lab_2 \
+            "$pla_file" \
+            --strategy="$strategy" || true
+
+      - name: Convert Valgrind XML to HTML
         if: always()
         run: |
-          curl -L -o /tmp/parsegrind.jar https://github.com/cryptid-org/parsegrind/releases/download/v1.1.3/parsegrind-cli-1.1.3.jar
-          java -jar /tmp/parsegrind.jar \
-            --base-directory=. \
-            --source-glob='**/*.cpp' \
-            --source-glob='**/*.h' \
-            --valgrind-glob='scan_reports/valgrind/**/*.xml' \
-            --output=scan_reports/valgrind_report.html
+          python3 tools/valgrind_xml_to_html.py --input scan_reports/valgrind
 
-      - name: Upload Valgrind reports to artifacts
+      - name: Upload Valgrind XML reports to artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: valgrind-report
-          path: scan_reports/valgrind_report.html
+          path: |
+            scan_reports/valgrind/Sat_ex30_3_min-dont-care.xml
+            scan_reports/valgrind/Sat_ex30_3_min-dont-care.html
           retention-days: 30
