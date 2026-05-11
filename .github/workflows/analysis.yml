@@ -7,8 +7,6 @@ jobs:
   valgrind:
     name: Valgrind
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout
@@ -31,32 +29,31 @@ jobs:
       - name: Build
         run: cmake --build build -j$(nproc)
 
-      - name: Run Valgrind for min-dont-care
+      - name: Run Valgrind for Sat_ex30_3
         run: |
           set +e
           mkdir -p scan_reports/valgrind
-
-          pla_file="SatExamples/Sat_ex30_3.pla"
-          strategy="min-dont-care"
-          report_file="scan_reports/valgrind/Sat_ex30_3_${strategy}.xml"
-          echo "Testing: $pla_file with strategy $strategy"
           valgrind \
             --leak-check=full \
             --show-leak-kinds=all \
             --track-origins=yes \
             --xml=yes \
-            --xml-file="$report_file" \
+            --xml-file="scan_reports/valgrind/Sat_ex30_3_min-dont-care.xml" \
             --error-exitcode=1 \
             ./build/development_of_information_security_tools_lab_2 \
-            "$pla_file" \
-            --strategy="$strategy" || true
+            "SatExamples/Sat_ex30_3.pla" \
+            --strategy="min-dont-care" || true
 
       - name: Convert Valgrind XML to HTML
         if: always()
         run: |
-          python3 tools/valgrind_xml_to_html.py --input scan_reports/valgrind
+          mkdir -p /tmp/valgrind_30_3
+          cp scan_reports/valgrind/Sat_ex30_3_min-dont-care.xml /tmp/valgrind_30_3/
+          python3 tools/valgrind_xml_to_html.py \
+            --input /tmp/valgrind_30_3 \
+            --output scan_reports/valgrind
 
-      - name: Upload Valgrind XML reports to artifacts
+      - name: Upload report
         if: always()
         uses: actions/upload-artifact@v4
         with:

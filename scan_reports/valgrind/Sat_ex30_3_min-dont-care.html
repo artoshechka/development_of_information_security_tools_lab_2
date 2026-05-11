@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sat_ex30_3_min-dont-care</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; color: #1b1b1b; }
+    h1 { margin-bottom: 6px; }
+    .meta { color: #444; margin-bottom: 16px; }
+    pre { white-space: pre-wrap; margin: 0; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 24px; }
+    th, td { border: 1px solid #ddd; padding: 8px; vertical-align: top; }
+    th { background: #f3f3f3; text-align: left; }
+    .small { font-size: 12px; color: #666; }
+  </style>
+</head>
+<body>
+  <h1>Sat_ex30_3_min-dont-care</h1>
+  <div class="meta">
+    <div><strong>Errors:</strong> 33</div>
+    <div><strong>Status:</strong> FINISHED 00:00:00:01.050</div>
+    <div><strong>Command:</strong> Command: ./build/development_of_information_security_tools_lab_2 SatExamples/Sat_ex30_3.pla --strategy=min-dont-care</div>
+  </div>
+  <div class="small"><pre>Memcheck, a memory error detector
+Copyright (C) 2002-2022, and GNU GPL&#x27;d, by Julian Seward et al.
+Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+Command: ./build/development_of_information_security_tools_lab_2 SatExamples/Sat_ex30_3.pla --strategy=min-dont-care</pre></div>
+
+  <h2>Error Summary</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Unique</th>
+        <th>Count</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>0xe80</td><td>160</td></tr>
+<tr><td>0xe7f</td><td>160</td></tr>
+<tr><td>0xe7e</td><td>160</td></tr>
+<tr><td>0xe7d</td><td>160</td></tr>
+<tr><td>0xe7c</td><td>160</td></tr>
+<tr><td>0x2</td><td>1236</td></tr>
+<tr><td>0x1</td><td>1236</td></tr>
+<tr><td>0x0</td><td>1236</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Errors</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Kind</th>
+        <th>What</th>
+        <th>Aux</th>
+        <th>Leak</th>
+        <th>Stack (first)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>MismatchedFree</td><td>Mismatched free() / delete / delete []</td><td>Address 0x4e6afb0 is 0 bytes inside a block of size 20 alloc&#x27;d</td><td></td><td><pre>operator delete(void*) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator=(char const*) (BBV.cpp:L192) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolEquation::CheckRules() (boolequation.cpp:L92) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L153) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>2</td><td>MismatchedFree</td><td>Mismatched free() / delete / delete []</td><td>Address 0x4e6ae30 is 0 bytes inside a block of size 20 alloc&#x27;d</td><td></td><td><pre>operator delete(void*) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator=(char const*) (BBV.cpp:L192) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolEquation::CheckRules() (boolequation.cpp:L97) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L153) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>3</td><td>MismatchedFree</td><td>Mismatched free() / delete / delete []</td><td>Address 0x4e6aef0 is 0 bytes inside a block of size 20 alloc&#x27;d</td><td></td><td><pre>operator delete(void*) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator=(char const*) (BBV.cpp:L192) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolEquation::CheckRules() (boolequation.cpp:L101) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L153) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>4</td><td>MismatchedFree</td><td>Mismatched free() / delete / delete []</td><td>Address 0x51794e0 is 0 bytes inside a block of size 20 alloc&#x27;d</td><td></td><td><pre>operator delete(void*) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator=(char const*) (BBV.cpp:L192) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolInterval::isEqualComponent(BoolInterval&amp;) (boolinterval.cpp:L104) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L173) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>5</td><td>MismatchedFree</td><td>Mismatched free() / delete / delete []</td><td>Address 0x5179540 is 0 bytes inside a block of size 20 alloc&#x27;d</td><td></td><td><pre>operator delete(void*) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator=(char const*) (BBV.cpp:L192) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolInterval::isEqualComponent(BoolInterval&amp;) (boolinterval.cpp:L107) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L173) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>6</td><td>MismatchedFree</td><td>Mismatched free() / delete / delete []</td><td>Address 0x51795a0 is 0 bytes inside a block of size 20 alloc&#x27;d</td><td></td><td><pre>operator delete(void*) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator=(char const*) (BBV.cpp:L192) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolInterval::isEqualComponent(BoolInterval&amp;) (boolinterval.cpp:L110) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L173) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>7</td><td>MismatchedFree</td><td>Mismatched free() / delete / delete []</td><td>Address 0x5179600 is 0 bytes inside a block of size 20 alloc&#x27;d</td><td></td><td><pre>operator delete(void*) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator=(char const*) (BBV.cpp:L192) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolInterval::isEqualComponent(BoolInterval&amp;) (boolinterval.cpp:L113) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L173) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>8</td><td>MismatchedFree</td><td>Mismatched free() / delete / delete []</td><td>Address 0x5179f60 is 0 bytes inside a block of size 20 alloc&#x27;d</td><td></td><td><pre>operator delete(void*) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator=(char const*) (BBV.cpp:L192) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolInterval::isEqualComponent(BoolInterval&amp;) (boolinterval.cpp:L115) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L173) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>9</td><td>Leak_IndirectlyLost</td><td>20 bytes in 1 blocks are indirectly lost in loss record 1 of 25</td><td></td><td>20 bytes, 1 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator=(BBV&amp;) (BBV.cpp:L173) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolInterval::BoolInterval(BBV&amp;, BBV&amp;) (boolinterval.cpp:L46) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L133) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>10</td><td>Leak_IndirectlyLost</td><td>20 bytes in 1 blocks are indirectly lost in loss record 2 of 25</td><td></td><td>20 bytes, 1 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator=(BBV&amp;) (BBV.cpp:L173) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolInterval::BoolInterval(BBV&amp;, BBV&amp;) (boolinterval.cpp:L47) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L133) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>11</td><td>Leak_DefinitelyLost</td><td>72 (32 direct, 40 indirect) bytes in 1 blocks are definitely lost in loss record 3 of 25</td><td></td><td>72 bytes, 1 blocks</td><td><pre>operator new(unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+SolveBooleanEquation (main.cpp:L133) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>12</td><td>Leak_DefinitelyLost</td><td>161 bytes in 1 blocks are definitely lost in loss record 4 of 25</td><td></td><td>161 bytes, 1 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator char*() (BBV.cpp:L363) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolEquation::CheckRules() (boolequation.cpp:L54) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L153) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>13</td><td>Leak_IndirectlyLost</td><td>460 bytes in 23 blocks are indirectly lost in loss record 5 of 25</td><td></td><td>460 bytes, 23 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator=(BBV&amp;) (BBV.cpp:L173) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolInterval::BoolInterval(BBV&amp;, BBV&amp;) (boolinterval.cpp:L46) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolEquation::BoolEquation(BoolEquation&amp;) (boolequation.cpp:L31) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L195) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>14</td><td>Leak_IndirectlyLost</td><td>460 bytes in 23 blocks are indirectly lost in loss record 6 of 25</td><td></td><td>460 bytes, 23 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator=(BBV&amp;) (BBV.cpp:L173) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolInterval::BoolInterval(BBV&amp;, BBV&amp;) (boolinterval.cpp:L47) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolEquation::BoolEquation(BoolEquation&amp;) (boolequation.cpp:L31) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L195) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>15</td><td>Leak_IndirectlyLost</td><td>460 bytes in 23 blocks are indirectly lost in loss record 7 of 25</td><td></td><td>460 bytes, 23 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator=(BBV&amp;) (BBV.cpp:L173) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolInterval::BoolInterval(BBV&amp;, BBV&amp;) (boolinterval.cpp:L46) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolEquation::BoolEquation(BoolEquation&amp;) (boolequation.cpp:L31) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L196) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>16</td><td>Leak_IndirectlyLost</td><td>460 bytes in 23 blocks are indirectly lost in loss record 8 of 25</td><td></td><td>460 bytes, 23 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator=(BBV&amp;) (BBV.cpp:L173) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolInterval::BoolInterval(BBV&amp;, BBV&amp;) (boolinterval.cpp:L47) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolEquation::BoolEquation(BoolEquation&amp;) (boolequation.cpp:L31) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L196) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>17</td><td>Leak_DefinitelyLost</td><td>1,280 bytes in 1 blocks are definitely lost in loss record 9 of 25</td><td></td><td>1280 bytes, 1 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BoolEquation::BoolEquation(BoolInterval**, BoolInterval*, int, int, BBV) (boolequation.cpp:L10) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L135) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>18</td><td>Leak_DefinitelyLost</td><td>1,656 (736 direct, 920 indirect) bytes in 23 blocks are definitely lost in loss record 10 of 25</td><td></td><td>1656 bytes, 23 blocks</td><td><pre>operator new(unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BoolEquation::BoolEquation(BoolEquation&amp;) (boolequation.cpp:L31) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L195) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>19</td><td>Leak_DefinitelyLost</td><td>1,656 (736 direct, 920 indirect) bytes in 23 blocks are definitely lost in loss record 11 of 25</td><td></td><td>1656 bytes, 23 blocks</td><td><pre>operator new(unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BoolEquation::BoolEquation(BoolEquation&amp;) (boolequation.cpp:L31) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L196) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>20</td><td>Leak_DefinitelyLost</td><td>3,703 bytes in 23 blocks are definitely lost in loss record 12 of 25</td><td></td><td>3703 bytes, 23 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator char*() (BBV.cpp:L363) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolEquation::CheckRules() (boolequation.cpp:L87) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L153) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>21</td><td>Leak_DefinitelyLost</td><td>25,760 bytes in 160 blocks are definitely lost in loss record 13 of 25</td><td></td><td>25760 bytes, 160 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator char*() (BBV.cpp:L363) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolInterval::BoolInterval(char const*) (boolinterval.cpp:L28) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L118) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>22</td><td>Leak_DefinitelyLost</td><td>25,760 bytes in 160 blocks are definitely lost in loss record 14 of 25</td><td></td><td>25760 bytes, 160 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator char*() (BBV.cpp:L363) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolInterval::BoolInterval(char const*) (boolinterval.cpp:L29) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L118) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>23</td><td>Leak_DefinitelyLost</td><td>25,760 bytes in 160 blocks are definitely lost in loss record 15 of 25</td><td></td><td>25760 bytes, 160 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator char*() (BBV.cpp:L363) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolInterval::isEqualComponent(BoolInterval&amp;) (boolinterval.cpp:L104) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L173) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>24</td><td>Leak_DefinitelyLost</td><td>25,760 bytes in 160 blocks are definitely lost in loss record 16 of 25</td><td></td><td>25760 bytes, 160 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator char*() (BBV.cpp:L363) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolInterval::isEqualComponent(BoolInterval&amp;) (boolinterval.cpp:L107) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L173) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>25</td><td>Leak_DefinitelyLost</td><td>25,760 bytes in 160 blocks are definitely lost in loss record 17 of 25</td><td></td><td>25760 bytes, 160 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator char*() (BBV.cpp:L363) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolInterval::isEqualComponent(BoolInterval&amp;) (boolinterval.cpp:L110) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L173) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>26</td><td>Leak_DefinitelyLost</td><td>25,760 bytes in 160 blocks are definitely lost in loss record 18 of 25</td><td></td><td>25760 bytes, 160 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator char*() (BBV.cpp:L363) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolInterval::isEqualComponent(BoolInterval&amp;) (boolinterval.cpp:L113) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L173) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>27</td><td>Leak_DefinitelyLost</td><td>25,760 bytes in 160 blocks are definitely lost in loss record 19 of 25</td><td></td><td>25760 bytes, 160 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator char*() (BBV.cpp:L363) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolInterval::isEqualComponent(BoolInterval&amp;) (boolinterval.cpp:L115) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L173) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>28</td><td>Leak_DefinitelyLost</td><td>29,440 bytes in 23 blocks are definitely lost in loss record 20 of 25</td><td></td><td>29440 bytes, 23 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BoolEquation::BoolEquation(BoolEquation&amp;) (boolequation.cpp:L25) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L195) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>29</td><td>Leak_DefinitelyLost</td><td>29,440 bytes in 23 blocks are definitely lost in loss record 21 of 25</td><td></td><td>29440 bytes, 23 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BoolEquation::BoolEquation(BoolEquation&amp;) (boolequation.cpp:L25) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L196) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>30</td><td>Leak_DefinitelyLost</td><td>198,996 bytes in 1,236 blocks are definitely lost in loss record 22 of 25</td><td></td><td>198996 bytes, 1236 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator char*() (BBV.cpp:L363) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolEquation::CheckRules() (boolequation.cpp:L92) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L153) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>31</td><td>Leak_DefinitelyLost</td><td>198,996 bytes in 1,236 blocks are definitely lost in loss record 23 of 25</td><td></td><td>198996 bytes, 1236 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator char*() (BBV.cpp:L363) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolEquation::CheckRules() (boolequation.cpp:L95) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L153) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>32</td><td>Leak_DefinitelyLost</td><td>198,996 bytes in 1,236 blocks are definitely lost in loss record 24 of 25</td><td></td><td>198996 bytes, 1236 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator char*() (BBV.cpp:L363) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolEquation::CheckRules() (boolequation.cpp:L97) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L153) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+<tr><td>33</td><td>Leak_DefinitelyLost</td><td>198,996 bytes in 1,236 blocks are definitely lost in loss record 25 of 25</td><td></td><td>198996 bytes, 1236 blocks</td><td><pre>operator new[](unsigned long) [/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so]
+BBV::operator char*() (BBV.cpp:L363) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+BoolEquation::CheckRules() (boolequation.cpp:L101) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+SolveBooleanEquation (main.cpp:L153) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]
+main (main.cpp:L304) [/home/runner/work/development_of_information_security_tools_lab_2/development_of_information_security_tools_lab_2/build/development_of_information_security_tools_lab_2]</pre></td></tr>
+    </tbody>
+  </table>
+</body>
+</html>
