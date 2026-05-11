@@ -17,7 +17,7 @@ jobs:
       - name: Install build tools and Valgrind
         run: |
           sudo apt-get update
-          sudo apt-get install -y cmake g++ make valgrind
+          sudo apt-get install -y cmake g++ make valgrind openjdk-17-jre
 
       - name: Clone Allocator dependency
         run: |
@@ -58,42 +58,21 @@ jobs:
           
           exit $FAILED
 
-      - name: Aggregate Valgrind reports
+      - name: Build merged Valgrind HTML report
         if: always()
         run: |
-          sudo apt-get install -y xmlstarlet
-          
-          # Generate summary markdown from XML reports
-          echo "# Valgrind Test Results" > scan_reports/VALGRIND_REPORT.md
-          echo "" >> scan_reports/VALGRIND_REPORT.md
-          echo "**Generated:** $(date -u)" >> scan_reports/VALGRIND_REPORT.md
-          echo "" >> scan_reports/VALGRIND_REPORT.md
-          echo "## Test Coverage" >> scan_reports/VALGRIND_REPORT.md
-          echo "Total test cases: $(find scan_reports/valgrind -name '*.xml' | wc -l)" >> scan_reports/VALGRIND_REPORT.md
-          echo "" >> scan_reports/VALGRIND_REPORT.md
-          echo "## Individual Reports" >> scan_reports/VALGRIND_REPORT.md
-          for report in scan_reports/valgrind/*.xml; do
-            if [ -f "$report" ]; then
-              name=$(basename "$report")
-              # Extract error count from XML
-              errors=$(xmlstarlet sel -t -v "count(//error)" "$report" 2>/dev/null || echo "0")
-              echo "- [valgrind/$name](valgrind/$name) - $errors errors" >> scan_reports/VALGRIND_REPORT.md
-            fi
-          done
-
-      - name: Commit Valgrind results to repository
-        if: always()
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add scan_reports/valgrind/ scan_reports/VALGRIND_REPORT.md
-          git commit -m "ci: update valgrind analysis results" || echo "No changes to commit"
-          git push origin HEAD || echo "No changes to push"
+          curl -L -o /tmp/parsegrind.jar https://github.com/cryptid-org/parsegrind/releases/download/v1.1.3/parsegrind-cli-1.1.3.jar
+          java -jar /tmp/parsegrind.jar \
+            --base-directory=. \
+            --source-glob='**/*.cpp' \
+            --source-glob='**/*.h' \
+            --valgrind-glob='scan_reports/valgrind/**/*.xml' \
+            --output=scan_reports/valgrind_report.html
 
       - name: Upload Valgrind reports to artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: valgrind-reports
-          path: scan_reports/
+          name: valgrind-report
+          path: scan_reports/valgrind_report.html
           retention-days: 30
