@@ -18,11 +18,6 @@
 ```mermaid
 classDiagram
 direction LR
-
-class Allocator {
-	+Allocate(size_t size) void*
-	+Deallocate(void* pBlock) void
-}
 class X {
 	-byteDefinition* ptr
 	-int index
@@ -119,15 +114,15 @@ class NodeBoolTree {
 	+BoolEquation* eq
 }
 
-BBV *-- X : proxy access
-BoolInterval *-- BBV : contains
-BoolEquation o-- "0..*" BoolInterval : cnf
-BoolEquation --> BoolInterval : root
-BoolEquation ..> BranchingStrategy : strategy
+BBV ..> X
+BoolInterval *-- BBV
+BoolEquation o--  BoolInterval
+BoolEquation --> BoolInterval
+BoolEquation ..> BranchingStrategy
 BranchingStrategy <|-- FirstFreeColumnBranchingStrategy
 BranchingStrategy <|-- MinDontCareBranchingStrategy
-BranchingStrategyFactory ..> BranchingStrategy : creates
-NodeBoolTree --> BoolEquation : eq
+BranchingStrategyFactory ..> BranchingStrategy 
+NodeBoolTree --> BoolEquation
 ```
 ### Архитектура решения
 Основные компоненты:
