@@ -90,7 +90,7 @@ class BoolEquation {
 	+Rule4Col0(BBV vector) bool
 	+Rule5Col1(BBV vector) bool
 	+Simplify(int ixCol, char value) void
-	+ChooseColForBranching(const BranchingStrategy& strategy) int
+	+ChooseColForBranching(shared_ptr~BranchingStrategy~ strategy) int
 }
 class BranchingStrategy {
 	<<interface>>
