@@ -98,7 +98,7 @@ class BranchingStrategy {
 	+ChooseColumn(BoolEquation& equation) int
 }
 class BranchingStrategyFactory {
-	+GetStrategy(const string& name) shared_ptr~BranchingStrategy~
+	+GetStrategy(const string& name)$ shared_ptr~BranchingStrategy~
 }
 class FirstFreeColumnBranchingStrategy {
 	+ChooseColumn(BoolEquation& equation) int
@@ -108,7 +108,7 @@ class MinDontCareBranchingStrategy {
 }
 class NodeBoolTree {
 	+NodeBoolTree(BoolEquation* equation)
-	+~NodeBoolTree()
+	+NodeBoolTree(const NodeBoolTree& node)
 	+NodeBoolTree* lt
 	+NodeBoolTree* rt
 	+BoolEquation* eq
@@ -127,13 +127,14 @@ NodeBoolTree --> BoolEquation
 ### Архитектура решения
 Основные компоненты:
 - **main.cpp** — точка входа приложения. Считывает исходные данные SAT-задачи, строит КНФ, создает `BoolEquation` и запускает DPLL-поиск.
+- **X** — класс для доступа к одному биту вектора `BBV`; возвращается `operator[]` и позволяет читать и записывать отдельный бит через перегрузку присваивания и приведения к `int`.
 - **BBV** — битовый вектор, используемый для хранения булевых значений, масок и представления интервалов.
-- **BoolInterval** — класс интервала булевой функции; хранит вектор значений и don't-care маску, поддерживает операции сравнения, объединения и упрощения.
+- **BoolInterval** — класс интервала булевой функции; хранит вектор значений и don't-care маску, поддерживает операции сравнения, объединения интервалов, а также проверки поглощения и пересечения.
 - **BoolEquation** — модель SAT-задачи. Хранит КНФ, корневой интервал, маску столбцов и реализует правила упрощения и выбор столбца ветвления.
 - **BranchingStrategy** — интерфейс стратегии выбора переменной ветвления.
 	- **FirstFreeColumnBranchingStrategy** — выбирает первый свободный столбец.
 	- **MinDontCareBranchingStrategy** — выбирает столбец с минимальным числом символов `-`.
-- **BranchingStrategyFactory** — создает нужную стратегию по имени и позволяет менять правило ветвления без изменения логики решателя.
+- **BranchingStrategyFactory** — кэширует стратегий и возвращает нужную по имени; позволяет менять правило ветвления без изменения логики решателя.
 - **NodeBoolTree** — узел дерева поиска, связывает текущее состояние уравнения с левым и правым поддеревом.
 
 Таким образом, проект разделен на три слоя: представление данных (`BBV`, `BoolInterval`), логика SAT-решателя (`BoolEquation`, `NodeBoolTree`) и стратегия выбора ветвления (`BranchingStrategy` и ее реализации).

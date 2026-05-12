@@ -135,23 +135,28 @@ void SolveBooleanEquation(
           int a = currentEquation->CheckRules();
 
           switch (a) {
-          case 0: {
+          case 0: { // Корня нет.
             BoolTree.pop();
             flag = false;
             break;
           }
 
-          case 1: {
+          case 1: { // Правило выполнилось, корень найден или продолжаем
+                    // упрощать.
             if (currentEquation->count == 0 ||
                 currentEquation->mask.getWeight() ==
-                    currentEquation->mask.getSize()) {
+                    currentEquation->mask
+                        .getSize()) { // Если кончились строки или столбцы,
+                                      // корень найден.
               flag = false;
-              rootIsFinded = true;
+              rootIsFinded =
+                  true; // Полагаем, что корень найден, выполняем проверку корня
 
               for (int i = 0; i < cnfSize; i++) {
 
                 if (!CNF[i]->isEqualComponent(*currentEquation->root)) {
-                  rootIsFinded = false;
+                  rootIsFinded =
+                      false; // Корень не найден. Продолжаем искать дальше.
                   BoolTree.pop();
                   break;
                 }
@@ -161,7 +166,8 @@ void SolveBooleanEquation(
             break;
           }
 
-          case 2: {
+          case 2: { // Правила не выполнились, ветвление.
+            // Ветвление, создание новых узлов.
             int indexBranching =
                 currentEquation->ChooseColForBranching(branchingStrategy);
 
